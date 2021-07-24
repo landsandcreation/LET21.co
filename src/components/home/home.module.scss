@@ -1,0 +1,569 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoint";
+.Home {
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  transition: all ease-in-out 0.2s;
+         @include ssm {
+
+   width: 95%;
+   
+ 
+  }
+  &__Fold {
+          @include ssm {
+
+   margin: auto;
+   
+ 
+  }
+    width: 100%;
+    
+    // background: rgba(0, 0, 0, 0.05);
+    background-image: url("../../assets/images/o3.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    z-index: 0;
+
+    &__Overlay {
+      position: absolute;
+      background-color: rgba(64, 64, 64, 0.5);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  &__Caption {
+    color: #fff;
+    margin-top: 160px;
+    
+    width: 100%;
+    z-index: 2;
+
+    &>h4 {
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      
+      margin-left: 70px;
+           @include sm {
+
+    display: none;
+ 
+  }
+    }
+
+    &>p {
+      font-size: 30px;
+    margin-left: 70px;
+             @include sm {
+
+    display: none;
+ 
+  }
+    }
+
+  }
+}
+
+
+
+.book{
+  margin-top: 70px;
+  margin-left: 230px;
+ width: 370px;
+  z-index: 2;
+  height:480px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         @include ssm {
+margin-left: 0px;
+ height:400px;
+ width: 300px;
+ margin-top: 150px;
+ margin-right: 30px;
+ 
+  }
+  .bookall {
+      margin-top: 37px;
+      
+      margin-left: 40px;
+   
+    border-radius: 5px;
+    width: 100%;
+    height: 3em;
+  
+    flex-wrap: nowrap;
+    margin-bottom: 1.722em;
+          @include sm {
+margin-top: 50px;
+
+ 
+  }
+    input{
+        padding: 12px;
+        margin-bottom: 15px;
+        width: 80%;
+        border-radius: 4px;
+            @include sm {
+padding: 8px;
+ 
+  }
+
+    }
+    .button {
+    padding: 12px;
+    
+    width: 80%;
+      border-radius: 7px;
+      background-color: #ffa500;
+                @include sm {
+padding: 8px;
+ 
+  }
+      a{
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+       text-decoration: none;
+
+      }
+   
+
+    }
+   
+
+
+  }
+
+}
+
+.AppStoreAction {
+  z-index: 2;
+  text-align: left;
+
+  &>div {
+    justify-content: flex-start;
+  }
+
+}
+
+.Features,
+.PopularTrips,
+.Newsletter {
+  font-size: 1rem;
+
+  &__SubHeading {
+    font-weight: 600;
+    font-size: 0.78em;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #5acafa;
+    text-align: center;
+
+  }
+
+  &__Heading {
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 144%;
+    text-align: center;
+        @include ssm {
+font-size: 20px;
+width: 100%;
+margin-top: 40px;
+text-align: center;
+ 
+  }
+  }
+}
+
+.Newsletter,
+.Features {
+  padding: 6.5em 6.05em;
+  background-color: #fff;
+        @include ssm {
+padding-top: 0;
+padding-left: 10px;
+padding-bottom: 0;
+  }
+  &__Heading {
+    color: #425486;
+  }
+}
+
+.Features {
+
+
+  &__Heading {
+color: black;
+text-align: center;
+        @include ssm {
+font-size: 23px;
+width: 100%;
+ margin-top: 10px;
+ margin-left: 40px;
+  }
+  }
+
+  &__List {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+   
+    justify-content: space-between;
+    align-items: center;
+           @include ssm {
+display: block;
+ 
+  }
+  }
+
+  &__Item {
+    width: 16.67em;
+
+
+    &__Icon {
+      width: 5em;
+      height: 5em;
+      border-radius: 50%;
+      margin-bottom: 1.17em;
+      color: #ffa500;
+
+           @include ssm {
+width: 4em;
+      height: 4em;
+      margin-left:40px;
+ 
+  }
+
+      svg {
+        height: 100%;
+        width: 100%;
+        fill: currentColor;
+      }
+    }
+
+    &__Heading {
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 127%;
+      color: #000;
+    @include ssm {
+margin-left: 40px;
+width: 100%;
+ 
+  }
+    }
+
+    &__Text {
+      font-size: 15px;
+      line-height: 125%;
+      color: #000;
+    @include ssm {
+margin-left: 40px;
+text-align: justify;
+ 
+  }
+    }
+  }
+}
+
+.PopularTrips {
+  background: white;
+  margin: auto;
+  &__TripListWrapper{ 
+    width: 100%;
+   
+  }
+
+  &__TripList {
+    margin: auto;
+    list-style: none;
+  display: flex;
+  margin-left: 40px;
+   transition: transform 0.1s ease-in;
+    width: 96%;
+           @include sm {
+display: block;
+margin: auto;
+margin-left: 40px;
+  }
+    
+  }
+
+  &__Trip {
+    margin: auto;
+    box-shadow: 10px #000;
+    flex-basis: 33%;
+    box-shadow: 20px black;
+    margin-bottom: 20px;
+ justify-content: space-between;
+ transition: transform 0.1s ease-in;
+         @include sm {
+display: block;
+ 
+  }
+    &>a {
+      font-size: 20px;
+      line-height: 125%;
+      color: black;
+      padding-bottom: 0.13em;
+      text-decoration: none;
+            @include sm {
+display: block;
+  }
+      &>img{
+        width: 400px;
+        border-radius: 5%;
+        height: 300px;
+        transition: transform 0.1s ease-in;
+        box-shadow: 10 130px 150px rgba(0, 0, 0, 0.1);
+
+        @include ssm {
+      width: 280px;    
+        height: 150px;
+ 
+  }
+    }
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+
+
+
+
+
+
+  &__TripListWrapper2 {
+   
+    width: 100%;
+  
+    margin: auto;
+  
+  }
+
+  &__TripList2 {
+     
+    list-style: none;
+  
+  display: flex;
+
+  
+    width: 96%;
+    margin: auto;
+    &:first-child{
+      margin-left: 40px;
+    }
+    &:child(4){
+      margin-left: 40px;
+    }
+            @include ssm {
+display: block;
+ margin-left: 40px;
+  }
+  }
+
+  &__Trip2 {
+    margin: auto;
+    box-shadow: 10px #000;
+    flex-basis: 25%;
+    box-shadow: 20px black;
+    margin-bottom: 20px;
+            @include ssm {
+margin: 0;
+ 
+  }
+    &>a {
+      font-size: 20px;
+      line-height: 125%;
+     
+      color: black;
+      padding-bottom: 0.13em;
+      text-decoration: none;
+             @include sm {
+display: block;
+ 
+  }
+             @include ssm {
+display: block;
+ 
+  }
+      &>img{
+        border-radius: 5%;
+          width: 280px;
+          height: 200px;
+          box-shadow: 10 130px 150px rgba(0, 0, 0, 0.1);
+     @include ssm {
+      width: 270px;    
+        height: 150px;
+ 
+  }
+
+      }
+  
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.Newsletter {
+  &__Heading {
+    margin-bottom: 2.13em;
+  }
+
+  &Form {
+    display: flex;
+    flex-wrap: nowrap;
+
+ 
+    &__Input {
+      margin-right: 1.5em;
+
+
+    }
+  }
+}
+
+
+.PopularTrips3 {
+  background: #fff;
+  padding: 2.277em 4.05em;
+
+  @include ssm {
+    padding: 0;
+  }
+
+  &__Heading {
+    color: #000;
+    margin-bottom: 1.84em;
+text-align: center;
+font-size: 30px;
+        @include ssm {
+font-size: 16px;
+width: 100%;
+
+text-align: center;
+ 
+  }
+  }
+
+  &__TripListWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    @include ssm {
+      flex-wrap: wrap;
+      margin-left: 10px;
+    }
+  }
+
+  &__TripList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    width: 100%;
+
+    @include ssm {
+      margin-bottom: 53px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+      &__Trip {
+    margin-bottom: 1.06em;
+
+    @include ssm {
+      margin-bottom: 21px;
+      flex-basis: 40%;
+
+    }
+
+    &>a {
+      font-size: 0.99em;
+      line-height: 125%;
+      color: #000;
+      padding-bottom: 0.13em;
+      text-decoration: none;
+
+      @include ssm {
+        font-size: 16px;
+       width: 100%;
+      }
+
+      &:hover {
+        border-bottom: 1px solid #ffa500;
+      }
+    }
+  }
+  }
+
+
+}
+.PopularTrips3 {
+  font-size: 1rem;
+    @include ssm {
+     margin-left: 0;
+    &__Trip{
+      &>li{
+        &>a{
+  @include ssm {
+   width: 100%;
+          }
+        }
+        
+      }
+    }
+
+  &__SubHeading {
+    font-weight: 600;
+    font-size: 0.78em;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #5acafa;
+
+    @include ssm {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      margin-left:0;
+    }
+  }
+
+  &__Heading {
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 144%;
+
+       @include ssm {
+font-size: 22px;
+width: 100%;
+
+text-align: center;
+ 
+  }
+  }
+  
+}
+}

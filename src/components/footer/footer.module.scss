@@ -1,0 +1,64 @@
+@import "../../styles/breakpoint";
+
+.Footer {
+    font-size: 1rem;
+ padding-top: 100px;
+ padding-bottom: 100px;
+ padding-left: 0px;
+    background: #ffa500;
+ 
+  
+    flex-wrap: nowrap;
+    
+
+    @include ssm {
+         padding-bottom: 200px;
+        display: block;
+    }
+
+    &__UsefullLinks {
+        font-size: 1em;
+        display: flex;
+        flex-wrap: nowrap;
+        
+         justify-content: space-around;
+        
+
+        @include ssm {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__LinksList {
+        list-style: none;
+     
+
+        @include ssm {
+            margin-bottom: 21px;
+
+            &:nth-of-type(odd) {
+                margin-right: 50px;
+            }
+        }
+
+
+        &>li {
+           &>a{
+                text-decoration: none;
+        color: white;
+            font-size: 0.89em;
+            line-height: 200%;
+            color: #ffff;
+           }
+             text-decoration: none;
+        color: white;
+            font-size: 0.89em;
+            line-height: 200%;
+            color: #ffff;
+
+            @include ssm {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoint";
+
+.Header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+z-index: 100;
+width: 100%;
+top: 0; 
+background: #fff;
+&__logo{
+    &>a{
+   font-size: 30px;
+    margin-left: 45px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+     @include ssm {
+font-size: 30px;
+ margin-left: 17px;
+ font-weight: 600;
+  }
+    }
+ 
+}
+    &__center{
+        display: flex;
+        align-items: center;
+        max-width: fit-content;
+        flex: 1;
+        padding: 10px;
+        &>a{
+
+            select{
+                border: none;
+                option{
+                   border: none;
+                   width: 0px;
+                   outline-width: 0;
+                }
+            }
+           
+        }
+        &>a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin-left: 30px;
+        }
+                  @include ssm {
+display: none;
+ margin-left: 0px;
+  }
+    }
+
+
+    &__right{
+        display: flex;
+        
+        align-items: center;
+        margin-right: 15px;
+
+       &__icon{
+           align-items: center;
+       }
+        &>a{
+
+            select{
+                border: none;
+                &>a{
+                    
+                }
+                option{
+                   border: none;
+                   width: 0px;
+                   outline-width: 0;
+                }
+            }
+           
+        }
+    }
+}
+.ava{
+    object-fit: contain;
+}
+.dropdown{
+    &>a{
+        color: white;
+    }
+}
+.las{
+    background-color: #fff;
+    
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+ 
+    
+}
