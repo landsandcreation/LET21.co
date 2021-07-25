@@ -17,6 +17,7 @@
     "classnames": "^2.3.1",
     "cruip-js-toolkit": "^1.0.3",
     "gh-pages": "^3.2.3",
+    "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
     "postcss": "^8.2.9",
@@ -40,7 +41,7 @@
   },
   "scripts": {
     "deploy": "gh-pages -d build",
-    "redeploy": "npm run build",
+    "predeploy": "npm run build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
