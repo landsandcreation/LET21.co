@@ -11,63 +11,53 @@ const Footer = () => {
       <div className={styles.Footer__UsefullLinks}>
         <ul className={styles.Footer__LinksList}>
           <li >
-            <strong>LEGAL</strong>
+            <strong>21LET</strong>
           </li>
           <li>
-            <Link to="/terms"> Terms </Link>
+            <Link to="/terms"> About Us</Link>
           </li>
           <li>
-            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/privacy-policy">Careers</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">App</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Insights</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Press</Link>
           </li>
         </ul>
         <ul className={styles.Footer__LinksList}>
           <li>
-            <strong>LEGAL</strong>
+            <strong>CONTACT</strong>
           </li>
           <li>
-            <Link to="/terms"> Terms </Link>
+            <Link to="/terms"> Help Center </Link>
           </li>
           <li>
-            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/privacy-policy">Contact</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Become a partner</Link>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+        
         </ul>
         <ul className={styles.Footer__LinksList}>
           <li>
-            <strong>COMPANY</strong>
+            <strong>PRIVACY</strong>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">Terms</Link>
           </li>
           <li>
-            <Link to="/careers">Careers</Link>
+            <Link to="/careers">Privacy</Link>
           </li>
           <li>
-            <Link to="/careers">Careers</Link>
+            <Link to="/careers">Terms</Link>
           </li>
-          <li>
-            <Link to="/careers">Careers</Link>
-          </li>
-          <li>
-            <Link to="/">Help Cen</Link>
-          </li>
+      
         </ul>
         <ul className={styles.Footer__LinksList}>
           <li>

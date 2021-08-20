@@ -559,14 +559,35 @@ margin: auto;
 justify-content: center;
 padding-top: 100px;
 padding-bottom: 100px;
+@include ssm {
+ justify-content: center;
+   
+    }
+
+@include ssm {
+  display: block;
+   
+    }
+
   &__book{
 margin-right: 60px;
 
+
+@include ssm {
+  display: block;
+   
+    }
 input{
   padding: 12px;
   border-radius: 5px;
   border: 0.1px solid #000;
   width: 400px;
+
+  @include ssm {
+    width: 270px;
+    padding: 7px;
+     
+      }
 }
   }
 }

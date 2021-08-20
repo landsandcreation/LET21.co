@@ -13,6 +13,7 @@ const profile = props => {
   return (
  
     <AppliedLayout {...props}>
+        <div>
 <div className={style.Profile}>
     <div className={style.Profile__book}>
         <div>
@@ -53,14 +54,13 @@ const profile = props => {
             <label>Gender</label><br></br>
             <input type="name" placeholder="Enter your Gender" />
         </div>
-        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white"  style={{ ...style, width: "140px", marginLeft: "10px", marginTop: "150px", background: "#fa5b05" }}>
-                 
-                 <span className="hidden xs:block ml-2">Submit</span>
-             </button>
+        
     </div>
    
 </div>
 
+
+</div>
     </AppliedLayout>
    
   )
