@@ -6,7 +6,7 @@
 .AuthLayout {
     font-size: 1rem;
     width: 100%;
-    background: #ffa500;
+    background: #fa5b05;
     height: 100vh;
     overflow-y: auto;
     padding-top: 8.56em;
@@ -40,6 +40,7 @@ margin: 0;
 .PasswordResetForm,
 .RegisterForm {
     margin-bottom: 4.27em;
+    margin-top: 50px;
 
     &__Input,
     &__container {
@@ -72,7 +73,7 @@ margin: 0;
 
     &__Submit {
         height: 3.25em;
-        background: #ffa500;
+        background: #fa5b05;
         color: white;
         width: 100%;
 

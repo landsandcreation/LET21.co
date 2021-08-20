@@ -24,6 +24,9 @@ import Footer from "./components/footer/footer.js";
 import About from "./pages/about.js";
 import Notification from "./travelers/notification.js";
 import location from "./pages/location.js";
+import Triping from "./pages/triping.js";
+import profile from "./pages/profile.js";
+
 import BookingDetailsContent from "./components/trip/booking-details-content.js";
 import BookingsContent from "./components/trip/bookings-content.js";
 import CompletingBookingContent from "./components/trip/completing-booking-content.js";
@@ -62,6 +65,9 @@ function App() {
     <Route path='/completing-booking-content' exact component={CompletingBookingContent} />
     <Route path="/Dashboard" exact component={Dashboard} />
         <Route path='/amen' exact component={Amen} />
+        <Route path='/profile' exact component={profile} />
+        <Route path='/triping' exact component={Triping} />
+        
         <Route path='/house' exact component={House} />
         <Route path='/price' exact component={Price} />
         <Route path='/rules' exact component={Rules} />

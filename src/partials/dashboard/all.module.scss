@@ -1,0 +1,14 @@
+.House{
+    padding: 0;
+display: flex;
+    &__bet{
+     margin-left: 30px;
+      &__group{
+
+          &>input{
+              padding: 16px !important;
+          }
+      }
+    }
+    
+}

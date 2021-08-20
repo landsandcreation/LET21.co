@@ -5,13 +5,16 @@ import { Switch, Route } from "react-router-dom";
 import {Person, Mail, KeyboardArrowDown} from "@material-ui/icons";
 import { Avatar} from "@material-ui/core";
 import { Dropdown } from 'react-bootstrap';
+import logo from "../../assets/images/logow.png"
 function Header() {
  
     return (
         
       <div className={style.Header}>
     <div className={style.Header__logo}>
-   <a href="/">LET21</a>
+      <a href="/">
+  <img src={logo}  />
+  </a>
     </div>
 
 <div className={style.Header__center}>
@@ -38,10 +41,10 @@ function Header() {
             <Dropdown.Item href="/sign-in-form" style={{...style, color: "black", textDecoration: "none"}}>Owners Login</Dropdown.Item><br></br><br></br>
             <Dropdown.Item href="/sign-in-form"  style={{style, color: "black", textDecoration: "none"}}>Travelers Login</Dropdown.Item><br></br><br></br>
             <Dropdown.Item href="/notification"  style={{style, color: "black", textDecoration: "none"}}>Notification</Dropdown.Item><br></br><br></br>
-            <Dropdown.Item href="/sign-in-form"  style={{style, color: "black", textDecoration: "none"}}>My Trips</Dropdown.Item><br></br><br></br>
-            <Dropdown.Item href="/"  style={{style, color: "black", textDecoration: "none"}}>My Profile</Dropdown.Item><br></br><br></br>
-            <Dropdown.Item href="/Dashboard"  style={{style, color: "black", textDecoration: "none"}}>Owners Dashboard</Dropdown.Item><br></br><br></br>
-            <Dropdown.Item href="/sign-in-form"  style={{style, color: "black", textDecoration: "none"}}>Logout</Dropdown.Item><br></br><br></br>
+            <Dropdown.Item href="/triping"  style={{style, color: "black", textDecoration: "none"}}>My Trips</Dropdown.Item><br></br><br></br>
+            <Dropdown.Item href="/profile"  style={{style, color: "black", textDecoration: "none"}}>My Profile</Dropdown.Item><br></br><br></br>
+            <Dropdown.Item href="/house"  style={{style, color: "black", textDecoration: "none"}}>Owners Dashboard</Dropdown.Item><br></br><br></br>
+            <Dropdown.Item href="/"  style={{style, color: "black", textDecoration: "none"}}>Logout</Dropdown.Item><br></br><br></br>
         </Dropdown.Menu>
         </Dropdown>
        

@@ -129,7 +129,7 @@ padding: 8px;
     
     width: 80%;
       border-radius: 7px;
-      background-color: #ffa500;
+      background-color: #fa5b05;
                 @include sm {
 padding: 8px;
  
@@ -241,7 +241,7 @@ display: block;
       height: 5em;
       border-radius: 50%;
       margin-bottom: 1.17em;
-      color: #ffa500;
+      color: #fa5b05;
 
            @include ssm {
 width: 4em;
@@ -513,7 +513,7 @@ text-align: center;
       }
 
       &:hover {
-        border-bottom: 1px solid #ffa500;
+        border-bottom: 1px solid #fa5b05;
       }
     }
   }

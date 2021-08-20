@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 
 import Sidebar from '../../partials/Sidebar';
 import Header from '../../partials/Header';
-
-import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
-import FilterButton from '../../partials/actions/FilterButton';
 import Datepicker from '../../partials/actions/Datepicker';
-
-
+import style from "./all.module.scss"
 
 
 
@@ -33,21 +29,18 @@ const Amen = props =>{
             {/* Dashboard actions */}
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
 
-              {/* Left: Avatars */}
-              <DashboardAvatars />
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
                 {/* Filter button */}
-                <FilterButton />
-                {/* Datepicker built with flatpickr */}
+            
                 <Datepicker />
                 {/* Add view button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white" style={{ ...style, background: "#fa5b05"}}>
                     <svg className="w-4 h-4 fill-current opacity-50 flex-shrink-0" viewBox="0 0 16 16">
                         <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                     </svg>
-                    <span className="hidden xs:block ml-2">Add view</span>
+                    <span className="hidden xs:block ml-2">Edit</span>
                 </button>                
               </div>
 
@@ -55,61 +48,59 @@ const Amen = props =>{
 
             {/* Cards */}
             
-            <div>
+            <div className={style.match}>
           <div>
-            <h6>Essential Ammenities</h6>
-            <label>Towels</label>
-            <input type="checkbox" />
-            <label>Bedsheets</label>
-            <input type="checkbox" />
-            <label>Duvet</label>
-            <input type="checkbox" />
-            <label>Soap</label>
-            <input type="checkbox" />
-            <label>Toilet Papers</label>
-            <input type="checkbox" />
-            <label>Pillow</label>
-            <input type="checkbox" />
+            <h6>Essential Ammenities</h6><br></br>
+         
+        
+            
+            
+            
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Duvet</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+            
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Gym</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Swimming Pool</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+         
+         
           </div>
        
-          <div>
+          <div><br></br>
             <h6>Cooking Ammenities</h6>
-            <label>Pots</label>
-            <input type="checkbox" />
-            <label>Pans</label>
-            <input type="checkbox" />
-            <label>Oil</label>
-            <input type="checkbox" />
-            <label>Salt</label>
-            <input type="checkbox" />
-            <label>Pepper</label>
-            <input type="checkbox" />
+            
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Microwave</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+            
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Oven</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Refrigerator</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
            
-          </div>
+          </div><br></br>
        
-          <label>Chairs</label>
-            <input type="checkbox" />
-            <label>Table</label>
-            <input type="checkbox" />
-            <label>Iron</label>
-            <input type="checkbox" />
-            <label>Wifi</label>
-            <input type="checkbox" />
-            <label>Television</label>
-            <input type="checkbox" />
-            <label>Air Conditioning</label>
-            <input type="checkbox" />
-            <label>Hair Dryer</label>
-            <input type="checkbox" />
-            <label>GYM</label>
-            <input type="checkbox" />
+          <h6>Interior Ammenities</h6>
+          <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Fan</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+            
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Television</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
+
+            <label  style={{ ...style, fontSize: "20px", marginRight: "30px" }}>Lightenings</label>
+            <input type="checkbox" style={{ ...style, width: "100", padding: "15px", marginRight: "30px" }} />
   
         </div>
 
           </div>
         </main>
 
-     
+        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white"  style={{ ...style, width: "140px", marginLeft: "150px", background: "#fa5b05" }}>
+                 
+                 <span className="hidden xs:block ml-2">Submit</span>
+             </button>
       </div>
     </div>
   );

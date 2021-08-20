@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import Sidebar from '../../partials/Sidebar';
 import Header from '../../partials/Header';
 
-import DashboardAvatars from '../../partials/dashboard/DashboardAvatars';
-import FilterButton from '../../partials/actions/FilterButton';
+
 import Datepicker from '../../partials/actions/Datepicker';
+import style from "./all.module.scss";
 
 
 
@@ -19,7 +19,7 @@ const Price = props =>{
     <div className="flex h-screen overflow-hidden">
 
       {/* Sidebar */}
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} style={{ ...style, background: "red"}} />
 
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
@@ -33,21 +33,19 @@ const Price = props =>{
             {/* Dashboard actions */}
             <div className="sm:flex sm:justify-between sm:items-center mb-8">
 
-              {/* Left: Avatars */}
-              <DashboardAvatars />
+          
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                {/* Filter button */}
-                <FilterButton />
+             
                 {/* Datepicker built with flatpickr */}
                 <Datepicker />
                 {/* Add view button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white" style={{ ...style, background: "#fa5b05"}}>
                     <svg className="w-4 h-4 fill-current opacity-50 flex-shrink-0" viewBox="0 0 16 16">
                         <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                     </svg>
-                    <span className="hidden xs:block ml-2">Add view</span>
+                    <span className="hidden xs:block ml-2"  >Edit</span>
                 </button>                
               </div>
 
@@ -55,35 +53,38 @@ const Price = props =>{
 
             {/* Cards */}
             
-        <div>
+        <div  style={{ ...style,  marginBottom: "40px" }}>
             <h3>Increase your chances of getting booked</h3>
             <h6>A 3% service fee will be charged on each bookings</h6>
         </div>
         <div>
-            <h3>STANDARD PRICE (This will be your default standard price for normal days)</h3>
-            <input type="number" />
+            <h3>STANDARD PRICE (This will be your default standard<br></br> price for normal days)</h3>
+            <input type="number"  style={{ ...style, width: "440px", marginBottom: "40px" }} />
         </div>
         <div>
-            <h3>STANDARD PRICE (This will be your default standard price for normal days)</h3>
-            <input type="number" />
+            <h3>STANDARD PRICE (This will be your default standard<br></br> price for normal days)</h3>
+            <input type="number"   style={{ ...style, width: "440px", marginBottom: "40px" }} />
         </div>
         <div>
-            <h3>STANDARD PRICE (This will be your default standard price for normal days)</h3>
-            <input type="number" />
+            <h3>STANDARD PRICE (This will be your default standard<br></br> price for normal days)</h3>
+            <input type="number"   style={{ ...style, width: "440px", marginBottom: "40px" }}/>
         </div>
         <div>
-            <h3>STANDARD PRICE (This will be your default standard price for normal days)</h3>
-            <input type="number" />
+            <h3>STANDARD PRICE (This will be your default standard<br></br> price for normal days)</h3>
+            <input type="number"   style={{ ...style, width: "440px", marginBottom: "40px" }}/>
         </div>
         <div>
-            <h3>STANDARD PRICE (This will be your default standard price for normal days)</h3>
-            <input type="number" />
+            <h3>STANDARD PRICE (This will be your default standard<br></br> price for normal days)</h3>
+            <input type="number"   style={{ ...style, width: "440px", marginBottom: "40px" }}/>
         </div>
 
           </div>
         </main>
 
-     
+        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white"  style={{ ...style, width: "140px", background: "#fa5b05", marginLeft: "150px", marginBottom: "40px" }}>
+                 
+                 <span className="hidden xs:block ml-2">Submit</span>
+             </button> 
       </div>
     </div>
   );
