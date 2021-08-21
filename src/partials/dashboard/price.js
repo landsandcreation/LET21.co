@@ -70,7 +70,7 @@ const Price = props =>{
             <input type="number"   style={{ ...style, width: "440px", marginBottom: "40px" }}/>
         </div>
         <div>
-            <h3>STANDARD PRICE (This will be your default standard<br></br> price for normal days)</h3>
+            <h3>STANDARD PRICE (This will be your default standard<br></br> price for Abnormal days)</h3>
             <input type="number"   style={{ ...style, width: "440px", marginBottom: "40px" }}/>
         </div>
         <div>
