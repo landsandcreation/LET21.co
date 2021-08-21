@@ -32,3 +32,9 @@ display: flex;
     }
     
 }
+.loveyou{
+    @include ssm{
+        margin-bottom: 0px;
+        display: block;
+    }
+}

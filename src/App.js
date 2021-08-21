@@ -3,6 +3,7 @@ import {
   Switch,
   Route,
   Link,
+  HashRouter,
   Router,
   useLocation
 } from 'react-router-dom';

@@ -95,10 +95,10 @@ const House = props =>{
           </div>
 
         </div>
-
+     
           </div>
         </main>
-        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white"  style={{ ...style, width: "140px", marginLeft: "150px", background: "#fa5b05" }}>
+        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white loveyou"  style={{ ...style, width: "140px", marginLeft: "150px", marginBotton: "100px", background: "#fa5b05" }}>
                  
                     <span>Submit</span>
                 </button> 
