@@ -14,8 +14,11 @@ background: #fff;
     img{
   width: 120px;
   height: 40px;
-  margin-left: 30px;
-  
+  margin-left: 70px;
+  @include ssm {
+    margin-left: 20px;
+     
+      }
     }
  
 }

@@ -36,7 +36,7 @@ const PopularTrips = () => {
   return (
     <div className={styles.PopularTrips}>
   
-      <h1 className={styles.PopularTrips__Heading}>
+      <h1 className={styles.PopularTrips__Heading} style={{ ...styles, color: "#000", marginBottom: "50px"}}>
         Find the best vacation rentals in Lagos
       </h1>
       <div className={styles.PopularTrips__TripListWrapper}>
@@ -59,7 +59,7 @@ const PopularTrips = () => {
            
           </li>
        
-        </ul>
+        </ul><br></br>
         <ul className={styles.PopularTrips__TripList}>
           <li className={styles.PopularTrips__Trip}>
           <a href=""><img src={live22} alt="" /></a>
@@ -74,11 +74,11 @@ const PopularTrips = () => {
           <Link to="/#">Ibeju Lekki Beach</Link>
           </li>
        
-        </ul>
+        </ul><br></br>
  
       </div>
       <div>
-        <h3 className={styles.PopularTrips__Heading}>Explore nearby</h3>
+        <h3 className={styles.PopularTrips__Heading} style={{ ...styles, color: "#000", marginBottom: "50px", marginTop: "50px"}}>Explore nearby</h3>
       </div>
       <div className={styles.PopularTrips__TripListWrapper2}>
         <ul className={styles.PopularTrips__TripList2}>
@@ -106,7 +106,7 @@ const PopularTrips = () => {
            
           </li>
        
-        </ul>
+        </ul><br></br>
     
         <ul className={styles.PopularTrips__TripList2}>
           <li className={styles.PopularTrips__Trip2}>
@@ -126,11 +126,11 @@ const PopularTrips = () => {
           <Link to="/#">Ibeju Lekki Beach</Link>
           </li>
        
-        </ul>
+        </ul><br></br>
       </div>
       <div className={styles.PopularTrips3}>
     
-      <h1 className={styles.PopularTrips3__Heading}>
+      <h1 className={styles.PopularTrips3__Heading} style={{ ...styles, color: "#000", marginBottom: "50px"}}>
         Other beautiful places to visit.
       </h1>
       <div className={styles.PopularTrips3__TripListWrapper}>

@@ -100,7 +100,7 @@ const House = props =>{
         </main>
         <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white"  style={{ ...style, width: "140px", marginLeft: "150px", background: "#fa5b05" }}>
                  
-                    <span className="hidden xs:block ml-2">Submit</span>
+                    <span>Submit</span>
                 </button> 
      
       </div>

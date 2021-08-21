@@ -50,7 +50,7 @@ const Profileset = props =>{
 
             {/* Cards */}
             
-        <div>
+        <div className={style.Pro}>
           <div style={{ ...style, display: "flex" }}>
           <div style={{ ...style, marginRight: "40px" }}>
             <h6>First Name</h6>

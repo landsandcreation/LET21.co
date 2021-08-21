@@ -628,11 +628,21 @@ margin-bottom: 0px;
 &__first{
   flex-basis: 70%;
 margin-left: 50px;
+@include ssm {
+  margin-left: 0px;
+   
+    }
 
 &__colu{
   display: flex;
       
 margin-bottom: 30px;
+@include ssm {
+  width: 99%;
+     display: block;
+     margin: auto;
+   
+    }
   &__one{
     flex-basis: 40%;
     
@@ -641,7 +651,13 @@ margin-bottom: 30px;
   padding: 8px;
   width: 80%;
   border-radius: 5px;
- 
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
 }
   }
   &__two{
@@ -651,6 +667,13 @@ margin-bottom: 30px;
       padding: 8px;
       width: 80%;
       border-radius: 5px;
+      @include ssm {
+        width: 99%;
+           display: block;
+           margin: auto;
+           margin-bottom: 10px;
+         
+          }
     }
   }
   &__three{
@@ -659,6 +682,13 @@ margin-bottom: 30px;
   padding: 8px;
   width: 72%;
   border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
 }
   }
 }
@@ -666,12 +696,26 @@ margin-bottom: 30px;
 &__bolu{
   display: flex;
 margin-bottom: 30px;
+@include ssm {
+  width: 99%;
+     display: block;
+     margin: auto;
+     margin-bottom: 10px;
+   
+    }
   &__four{
     flex-basis: 15%;
 &>input{
   padding: 8px;
   width: 80%;
   border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
 }
   }
   &__five{
@@ -680,6 +724,13 @@ margin-bottom: 30px;
   padding: 8px;
   width: 80%;
   border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
 }
   }
   &__six{
@@ -688,6 +739,13 @@ margin-bottom: 30px;
   padding: 8px;
   width: 70%;
   border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
 }
   }
 }
@@ -714,6 +772,14 @@ width: 100%;
       color: white;
    
       width: 74%;
+      @include ssm {
+        width: 99%;
+        top: 1000px;
+        margin-bottom: 60px;
+        position: absolute;
+           margin: auto;
+         
+          }
     &>a{
     font-size: 15px;
   font-weight: 700;
@@ -728,7 +794,11 @@ width: 100%;
     margin-top: 50px;
   font-size: 1rem;
   margin-right: 50px;
-
+  @include ssm {
+    margin-top: 30px;
+       margin: auto;
+     
+      }
   &__Card {
     background: #fff;
     border-radius: 5px;
@@ -739,9 +809,10 @@ width: 100%;
       margin-bottom: 2.06em;
     }
 
-    @include sm {
+    @include ssm {
       width: 100%;
       padding: 0 26px;
+      margin: auto;
     }
   }
 

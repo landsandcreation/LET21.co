@@ -1,8 +1,28 @@
+
+@import "../../styles/variables";
+@import "../../styles/breakpoint";
+
+
+
+.Pro{
+    @include ssm{
+        display: block;
+    }
+}
 .House{
     padding: 0;
 display: flex;
+
+
+@include ssm{
+    display: block;
+    margin-bottom: 150px;
+}
     &__bet{
-     margin-left: 30px;
+     margin-left: 60px;
+     @include ssm{
+         margin-left: 0px;
+     }
       &__group{
 
           &>input{
