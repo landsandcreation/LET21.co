@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/let21.co/static/css/main.bcf9602c.chunk.css",
-    "main.js": "/let21.co/static/js/main.620df2fd.chunk.js",
-    "main.js.map": "/let21.co/static/js/main.620df2fd.chunk.js.map",
-    "runtime-main.js": "/let21.co/static/js/runtime-main.969cbc68.js",
-    "runtime-main.js.map": "/let21.co/static/js/runtime-main.969cbc68.js.map",
+    "main.css": "/let21.co/static/css/main.7329c4a3.chunk.css",
+    "main.js": "/let21.co/static/js/main.e7940066.chunk.js",
+    "main.js.map": "/let21.co/static/js/main.e7940066.chunk.js.map",
+    "runtime-main.js": "/let21.co/static/js/runtime-main.7eb94c80.js",
+    "runtime-main.js.map": "/let21.co/static/js/runtime-main.7eb94c80.js.map",
     "static/css/2.9a8d6735.chunk.css": "/let21.co/static/css/2.9a8d6735.chunk.css",
-    "static/js/2.ff765e77.chunk.js": "/let21.co/static/js/2.ff765e77.chunk.js",
-    "static/js/2.ff765e77.chunk.js.map": "/let21.co/static/js/2.ff765e77.chunk.js.map",
+    "static/js/2.7978b858.chunk.js": "/let21.co/static/js/2.7978b858.chunk.js",
+    "static/js/2.7978b858.chunk.js.map": "/let21.co/static/js/2.7978b858.chunk.js.map",
     "index.html": "/let21.co/index.html",
     "static/css/2.9a8d6735.chunk.css.map": "/let21.co/static/css/2.9a8d6735.chunk.css.map",
-    "static/css/main.bcf9602c.chunk.css.map": "/let21.co/static/css/main.bcf9602c.chunk.css.map",
-    "static/js/2.ff765e77.chunk.js.LICENSE.txt": "/let21.co/static/js/2.ff765e77.chunk.js.LICENSE.txt",
+    "static/css/main.7329c4a3.chunk.css.map": "/let21.co/static/css/main.7329c4a3.chunk.css.map",
+    "static/js/2.7978b858.chunk.js.LICENSE.txt": "/let21.co/static/js/2.7978b858.chunk.js.LICENSE.txt",
     "static/media/b3.efbde770.jfif": "/let21.co/static/media/b3.efbde770.jfif",
     "static/media/i8.45abcb17.jpg": "/let21.co/static/media/i8.45abcb17.jpg",
     "static/media/l1.7ad27dbe.jpg": "/let21.co/static/media/l1.7ad27dbe.jpg",
@@ -24,6 +24,7 @@
     "static/media/live3.41e0c04a.jfif": "/let21.co/static/media/live3.41e0c04a.jfif",
     "static/media/live4.98c55100.jfif": "/let21.co/static/media/live4.98c55100.jfif",
     "static/media/live7.88e4c6df.jfif": "/let21.co/static/media/live7.88e4c6df.jfif",
+    "static/media/logow.6ca3266d.png": "/let21.co/static/media/logow.6ca3266d.png",
     "static/media/o1.33aaf7bb.jpg": "/let21.co/static/media/o1.33aaf7bb.jpg",
     "static/media/o2.dd33b12a.jfif": "/let21.co/static/media/o2.dd33b12a.jfif",
     "static/media/home.module.scss": "/let21.co/static/media/o3.513c52c5.jpg",
@@ -43,10 +44,10 @@
     "static/media/w34.06eb0efd.jfif": "/let21.co/static/media/w34.06eb0efd.jfif"
   },
   "entrypoints": [
-    "static/js/runtime-main.969cbc68.js",
+    "static/js/runtime-main.7eb94c80.js",
     "static/css/2.9a8d6735.chunk.css",
-    "static/js/2.ff765e77.chunk.js",
-    "static/css/main.bcf9602c.chunk.css",
-    "static/js/main.620df2fd.chunk.js"
+    "static/js/2.7978b858.chunk.js",
+    "static/css/main.7329c4a3.chunk.css",
+    "static/js/main.e7940066.chunk.js"
   ]
 }
