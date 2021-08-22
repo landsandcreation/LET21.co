@@ -49,7 +49,7 @@ function App() {
   }, [location.pathname]); // triggered on route change
 
   return (
-    <HashRouter>
+    <>
       <Switch>
      
         
@@ -79,7 +79,7 @@ function App() {
        
       </Switch>
    
-    </HashRouter>
+    </>
   );
 }
 
