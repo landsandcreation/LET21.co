@@ -113,7 +113,7 @@ const Personal = props => {
     </div>
         <div className={styles.Personal__first__over}>
       <div className={styles.Personal__first__over__one}>
-       <h4>ROOM INFORMATION</h4>
+       <h4>All ROOM INFORMATION</h4>
       </div>
       <div className={styles.Personal__first__over__two}>
       <div className={styles.Personal__first__over__two__app} >
