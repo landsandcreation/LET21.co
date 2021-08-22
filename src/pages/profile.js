@@ -17,7 +17,7 @@ const profile = props => {
 <div className={style.Profile}>
     <div className={style.Profile__book}>
         <div>
-            <label>Enter your First Name</label><br></br>
+            <label>Enter your Surname Name</label><br></br>
             <input type="name" placeholder="Enter your first name" />
         </div>
         <br></br>
