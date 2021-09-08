@@ -1,5 +1,0 @@
-export * from "./common"
-export * from "./terminals"
-export * from "./trips"
-export * from "./bookings"
-export * from "./settings"

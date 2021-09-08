@@ -1,86 +1,72 @@
-import React, { useEffect } from 'react';
-import {
-  Switch,
-  Route,
-  Link,
-  HashRouter,
-  Router,
-  useLocation
-} from 'react-router-dom';
-import './css/style.scss';
-import { focusHandling } from 'cruip-js-toolkit';
-import './charts/ChartjsConfig';
-// Import pages
-import Dashboard from './pages/Dashboard';
-import Amen from './partials/dashboard/amen';
-import House from './partials/dashboard/house';
-import Price from './partials/dashboard/price';
-import Rules from './partials/dashboard/rules';
-import Offers from './partials/dashboard/offers';
-import Profileset from './partials/dashboard/profileset';
-import View from './partials/dashboard/view';
-import Header from "../src/components/header/Header.js";
-import Home from "./components/home/home.js";
-import Footer from "./components/footer/footer.js";
-import About from "./pages/about.js";
-import Notification from "./travelers/notification.js";
-import location from "./pages/location.js";
-import Triping from "./pages/triping.js";
-import profile from "./pages/profile.js";
-
-import BookingDetailsContent from "./components/trip/booking-details-content.js";
-import BookingsContent from "./components/trip/bookings-content.js";
-import CompletingBookingContent from "./components/trip/completing-booking-content.js";
-import Personal from "./pages/personal.js";
-import SignInForm from "./components/auth/sign-in-form.js";
-import RegisterForm from "./components/auth/register-form.js";
-import './css/style.scss';
-
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, HashRouter, Route, Switch } from "react-router-dom";
+import blogdata from './data/blogdata.json';
+import Singleblogdata from './data/single-blogdata.json';
+import HomeV1 from './components/home-v1';
+import HomeV2 from './components/home-v2';
+import HomeV3 from './components/home-v3';
+import HomeV4 from './components/home-v4';
+import Property from './components/property';
+import AvilableProperty from './components/availavbe-property';
+import PropertiesByCity from './components/properties-by-city';
+import RecentProperties from './components/recent-properties';
+import PropertyDetails from './components/property-details';
+import About from './components/about';
+import Advisor from './components/advisor';
+import Pricing from './components/pricing';
+import UserList from './components/user-list';
+import Registraion from './components/registration';
+import Error from './components/error';
+import Faq from './components/faq';
+import News from './components/news';
+import NewsDetails from './components/news-details';
+import Contact from './components/contact';
+import SearchMap from './components/search-map';
+import SearchGrid from './components/search-grid';
+import SearchList from './components/search-list';
+import AddNew from './components/add-property';
 
 function App() {
 
-  const location = useLocation();
+        return(
+            <div className="App">
+            <Router>
+                <HashRouter basename="/">
+                <div>
+                <Switch>
+                    <Route exact path="/" component={HomeV1} />
+                    <Route path="/home-v2" component={HomeV2} />
+                    <Route path="/home-v3" component={HomeV3} />
+                    <Route path="/home-v4" component={HomeV4} />
+                    <Route path="/property" component={Property} />
+                    <Route path="/availavbe-property" component={AvilableProperty} />
+                    <Route path="/properties-by-city" component={PropertiesByCity} />
+                    <Route path="/recent-properties" component={RecentProperties} />
+                    <Route path="/property-details" component={PropertyDetails} />
+                    <Route path="/about" component={About} />
+                    <Route path="/advisor" component={Advisor} />
+                    <Route path="/pricing" component={Pricing} />
+                    <Route path="/user-list" component={UserList} />
+                    <Route path="/registration" component={Registraion} />
+                    <Route path="/error" component={Error} />
+                    <Route path="/faq" component={Faq} />
+                    <Route path="/news" component={News} />
+                    <Route path="/news-details" component={NewsDetails} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/search-map" component={SearchMap} />
+                    <Route path="/search-grid" component={SearchGrid} />
+                    <Route path="/search-list" component={SearchList} />
+                    <Route path="/add-property" component={AddNew} />
+                </Switch>
+                </div>
+                </HashRouter>
+            </Router>
+            </div>
+        )
+    }
 
-  useEffect(() => {
-    document.querySelector('html').style.scrollBehavior = 'auto'
-    window.scroll({ top: 0 })
-    document.querySelector('html').style.scrollBehavior = ''
-    focusHandling('outline');
-  }, [location.pathname]); // triggered on route change
-
-  return (
-    <>
-      <Switch>
-     
-        
-        <Route path='/' exact component={Home} />
-    <Route path='/header' exact component={Header} />
-    <Route path='/about' exact component={About} />
-    <Route path='/Dashboard' exact component={Dashboard} />
-    <Route path='/notification' exact component={Notification} />
-    <Route path='/booking-details-content' exact component={BookingDetailsContent} />
-    <Route path='/bookings-content' exact component={BookingsContent} />
-    <Route path='/personal' exact component={Personal} />
-    <Route path='/sign-in-form' exact component={SignInForm} />
-    <Route path='/register-form' exact component={RegisterForm} />
-    <Route path='/completing-booking-content' exact component={CompletingBookingContent} />
-    <Route path="/Dashboard" exact component={Dashboard} />
-        <Route path='/amen' exact component={Amen} />
-        <Route path='/profile' exact component={profile} />
-        <Route path='/triping' exact component={Triping} />
-        
-        <Route path='/house' exact component={House} />
-        <Route path='/price' exact component={Price} />
-        <Route path='/rules' exact component={Rules} />
-        <Route path='/offers' exact component={Offers} />
-        <Route path='/profileset' exact component={Profileset} />
-        <Route path='/view' exact component={View} />
-       
-       
-      </Switch>
-   
-    </>
-  );
-}
 
 export default App;
+
+
