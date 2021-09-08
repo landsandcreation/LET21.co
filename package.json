@@ -46,7 +46,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
     "start": "react-scripts start",
-    "build": "craco build",
+    "build": "react-scripts build",
     "start:dev": "node server.js",
     "test": "craco test",
     "eject": "craco eject"
