@@ -210,23 +210,23 @@
     "items":[
         {
           "icon": "assets/img/icons/11.png",
-          "title":"Sell, Rent Property Free",
+          "title":"Beautiful places to Stay",
           "url":"#",
-          "content":"Our experts answer all queries with their unmatched knowledge at every step of home buying.",
+          "content":"We make it sure from your booking to arrival is a seamless experience.",
           "class":""
         },
         {
           "icon": "assets/img/icons/12.png",
-          "title":"In-depth Info on Investment Hotspots",
+          "title":"We have the best prices",
           "url":"#",
-          "content":"Our experts answer all queries with their unmatched knowledge at every step of home buying.",
+          "content":" Our competitive prices for a quality travel experience makes us stand out.",
           "class":"offset-xl-1"
         },
         {
           "icon": "assets/img/icons/13.png",
-          "title":"Pool of Best Property Options",
+          "title":"Diverse Destination",
           "url":"#",
-          "content":"Our experts answer all queries with their unmatched knowledge at every step of home buying.",
+          "content":" Our competitive prices for a quality travel experience makes us stand out.",
           "class":"offset-xl-1"
         }
 

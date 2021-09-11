@@ -1,83 +1,77 @@
 {
-  "footerlogo": "assets/img/footer-logo.png",
+  "footerlogo": "assets/img/logow.png",
   "footertext": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support requests.",
   "footerbg": "assets/img/bg/footer.png",
   "socialicon": [
       {
         "icon": "fa fa-facebook",
-        "url": "https://www.facebook.com/codingeek.net/"
+        "url": "https://www.facebook.com/21ET/"
       },
       {
-        "icon": "fa fa-twitter",
-        "url": "https://twitter.com/codingeeknet"
+        "icon": "fa fa-instagram",
+        "url": "https://www.instagram.com/21LET/"
       },
       {
         "icon": "fa fa-linkedin",
-        "url": "https://www.linkedin.com/company/codingeek/about/"
+        "url": "https://www.linkedin.com/company/21LET/"
       }
     ],
-  "copyrighttext": "  © Copyright Nexus Property Made with  by <a href='https://codingeek.net/' target='_blank'><i class=\"fa fa-heart\"></i><span>Codingeek.</span></a>",
+  "copyrighttext": "  © Copyright reserved<a href='21let.com/' target='_blank'><span>21LET</span></a>",
   "popularserces": {
-    "title": "Popular Searches",
+    "title": "21LET",
     "links": [
       {
-        "title": "Apartment for Rent",
+        "title": "About Us",
         "url": "/property-details"
       },
       {
-        "title": "Apartment Low to hide",
+        "title": "Career",
         "url": "/property-details"
       },
       {
-        "title": "Offices for Buy",
+        "title": "App",
         "url": "/property-details"
       },
       {
-        "title": "Offices for Rent",
+        "title": "Insight",
         "url": "/property-details"
       }
     ]
   },
   "Homepress": {
-    "title": "Homepress Markets",
+    "title": "Contact",
     "links": [
       {
-        "title": "Los Angeles Offices",
+        "title": "Help Center",
          "url": "/property-details"
       },
       {
-        "title": "Las Vegas Apartment",
+        "title": "Contact",
          "url": "/property-details"
       },
       {
-        "title": "Sacramento Townhome",
-         "url": "/property-details"
-      },
-      {
-        "title": "San Francisco Offices",
+        "title": "Become a partner",
          "url": "/property-details"
       }
+   
     ]
   },
   "quicklink": {
-    "title": "Quick Links",
+    "title": "Privacy Policy",
     "links": [
       {
-        "title": "Pricing Plans",
+        "title": "Terms and Condition",
         "url": "/pricing"
       },
       {
-        "title": "FAQ",
+        "title": "Policy",
         "url": "/faq"
       },
       {
-        "title": "About Us",
+        "title": "FAQ",
         "url": "/About"
-      },
-      {
-        "title": "Contact Us",
-        "url": "/contact"
       }
+    
     ]
   }
 

@@ -20,7 +20,7 @@ class Navbar extends Component {
                     </div>
                   
                     <div className="nav-right-part nav-right-part-mobile">
-                      <Link className="btn btn-yellow" to="/add-property">OWNERS2 <span className="right"><i className="la la-plus" /></span></Link>
+                      <Link className="btn btn-yellow" to="/"><img src={publicUrl+"assets/img/logow.png" }alt="img" /></Link>
                     </div>
                     <div className="collapse navbar-collapse" id="realdeal_main_menu">
                       <ul className="navbar-nav menu-open readeal-top">
@@ -46,7 +46,7 @@ class Navbar extends Component {
                         <li className="menu-item-has-children">
                           <a href="#">Pages</a>
                           <ul className="sub-menu">
-                            <li><Link to="/About">About</Link></li>
+                            <li><Link to="/About">About </Link></li>
                             <li><Link to="/advisor">Advisor</Link></li>
                             <li><Link to="/search-list">Search List</Link></li>
                             <li><Link to="/search-grid">Search Grid</Link></li>

@@ -41,25 +41,25 @@ const Contact = () => {
 		      <div className="col-xl-3 col-sm-6">
 		        <div className="single-contact-info">
 		          <p><i className="fa fa-phone" />Call Us:</p>
-		          <h5>(000) 111 222 333</h5>
+		          <h5>+2348103851563</h5>
 		        </div>
 		      </div>
 		      <div className="col-xl-3 col-sm-6">
 		        <div className="single-contact-info">
 		          <p><i className="fa fa-fax" />Fax:</p>
-		          <h5>(000) 111 222 333</h5>
+		          <h5>+2348103851563</h5>
 		        </div>
 		      </div>
 		      <div className="col-xl-3 col-sm-6">
 		        <div className="single-contact-info">
 		          <p><i className="fa fa-envelope" />Have any Question?</p>
-		          <h5>example@codingeek.net</h5>
+		          <h5>info@21let.om</h5>
 		        </div>
 		      </div>
 		      <div className="col-xl-3 col-sm-6">
 		        <div className="single-contact-info">
 		          <p><i className="fa fa-phone" />Address</p>
-		          <h5>216 Trinity Ave, Pasadena,</h5>
+		          <h5>Emperor Plaza, Beside Shoprite, Sangotedo, Lekki-Epe Way, Lagos, Nigeria.</h5>
 		          <h5>CA 95046, United States</h5>
 		        </div>
 		      </div>
