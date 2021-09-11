@@ -68,7 +68,7 @@ class AddNew extends Component {
                     <div className="row">
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
-                         <span>Property address</span>
+                         <span>Property address(Street and number)</span>
                          <input type=""></input>
                         </div>
                       </div>
