@@ -22,19 +22,19 @@
     "links": [
       {
         "title": "About Us",
-        "url": "/property-details"
+        "url": "/"
       },
       {
         "title": "Career",
-        "url": "/property-details"
+        "url": "/"
       },
       {
         "title": "App",
-        "url": "/property-details"
+        "url": "/"
       },
       {
         "title": "Insight",
-        "url": "/property-details"
+        "url": "/"
       }
     ]
   },
@@ -43,15 +43,15 @@
     "links": [
       {
         "title": "Help Center",
-         "url": "/property-details"
+         "url": "/"
       },
       {
         "title": "Contact",
-         "url": "/property-details"
+         "url": "/"
       },
       {
         "title": "Become a partner",
-         "url": "/property-details"
+         "url": "/"
       }
    
     ]
@@ -61,15 +61,15 @@
     "links": [
       {
         "title": "Terms and Condition",
-        "url": "/pricing"
+        "url": "/"
       },
       {
         "title": "Policy",
-        "url": "/faq"
+        "url": "/"
       },
       {
         "title": "FAQ",
-        "url": "/About"
+        "url": "/"
       }
     
     ]

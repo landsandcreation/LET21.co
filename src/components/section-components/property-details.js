@@ -19,7 +19,7 @@ class PropertyDetails extends Component {
               <div className="property-details-slider">
                 <div className="item">
                   <div className="thumb">
-                    <img src={ publicUrl+"../assets/img/news/b3.jfif"} alt={ imagealt }/>
+                    <img src={ publicUrl+"../assets/img/news/i8.jpg"} alt={ imagealt }/>
                   </div>
                 </div>
              
