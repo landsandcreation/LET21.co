@@ -37,7 +37,6 @@ class Navbar extends Component {
                             <li><Link to="/faq">FAQ</Link></li>
                             <li><Link to="/pricing">Pricing</Link></li>
                             <li><Link to="/user-list">User List</Link></li>
-                            <li><Link to="/Registration">Registration</Link></li>
                             <li><Link to="/error">404</Link></li>
                           </ul>
                         </li>
