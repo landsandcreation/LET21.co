@@ -13,7 +13,7 @@ class BookingDetails extends Component {
               <form className={styles.create}>
               <div>
             <h4>Start your booking</h4>
-        <h6>Please enter your Contact Information details</h6><br></br>
+        <h6>Please enter your Personal Information details</h6><br></br>
 
         </div>
     <div className={styles.BookingDetailsContent__first__colu}>
@@ -59,7 +59,7 @@ class BookingDetails extends Component {
           </div>
 <div className={styles.BookingDetailsContent__butt}>
 <button>
-  <Link to="/completing-booking-content"><a className="btn btn-yellow" >Agree and Continue</a></Link>
+  <Link to="/completing-booking-content"><a>Agree and Continue</a></Link>
 </button>
 </div> 
 
