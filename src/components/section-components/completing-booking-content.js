@@ -48,7 +48,7 @@ class CompletingBookingContent extends Component {
 </div>
 <div className={styles.BookingDetailsContent__butt}>
 <button>
-  <a className="btn btn-yellow">Pay Now</a>
+  <a>Pay Now</a>
 </button>
 </div> 
 
