@@ -7,19 +7,20 @@
   margin-left: 100px;
   @include ssm{
     margin-left: 0px;
+    margin-bottom: 100px;
   }
 }
 
 .BookingDetailsContent {
   margin-top: 100px;
-  margin-bottom: 150px;
+  
 
 width: 100%;
 
         @include ssm {
 margin-bottom: 0px;
    display: block;
- 
+
   }
 
 
@@ -159,7 +160,7 @@ margin-bottom: 30px;
 }
 
 &__butt{
-  margin-top: 30px;
+ 
 
 width: 100%;
   &>button{
@@ -172,7 +173,7 @@ width: 100%;
       width: 74%;
       @include ssm {
         width: 99%;
-        top: 1000px;
+     
         margin-bottom: 60px;
         position: absolute;
            margin: auto;
