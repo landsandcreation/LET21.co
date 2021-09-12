@@ -19,14 +19,10 @@ class PropertyDetails extends Component {
               <div className="property-details-slider">
                 <div className="item">
                   <div className="thumb">
-                    <img src={ publicUrl+"/assets/img/news/b3.jfif"} alt={ imagealt }/>
+                    <img src={ publicUrl+"../assets/img/news/b3.jfif"} alt={ imagealt }/>
                   </div>
                 </div>
-                <div className="item">
-                  <div className="thumb">
-                    <img src={publicUrl+"/assets/img/news/i8.jpg"} alt={ imagealt } />
-                  </div>
-                </div>
+             
               </div>
               <div className="property-details-slider-info">
                 <h3><span>$350/mo</span> Ibeju Lekki Apartments</h3>
@@ -37,7 +33,7 @@ class PropertyDetails extends Component {
               <div className="widget widget-owner-info mt-lg-0 mt-5">
                 <div className="owner-info text-center">
                   <div className="thumb">
-                    <img src={ publicUrl+"/assets/img/news/l5.jpg"} alt={ imagealt } />
+                    <img src={ publicUrl+"../assets/img/feature/i8.jpg"} alt={ imagealt } />
                   </div>
                   <div className="details">
                     <h6>Ibeju Lekki Apartment</h6>
