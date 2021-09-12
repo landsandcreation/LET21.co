@@ -48,7 +48,7 @@
       ]
   }, 
   "featuredproperties":{
-    "title": "Featured Properties",
+    "title": "Featured Shortlets",
     "firstitem":
       {
         "title": "Ibeju Lekki Apartment",
@@ -182,26 +182,8 @@
 
       ]
   },
-    "partner":{
-    "title": "Our Partner",
-    "items":[
-        {
-          "image": "assets/img/client/1.png"
-        },
-        {
-          "image": "assets/img/client/2.png"
-        },
-        {
-          "image": "assets/img/client/3.png"
-        },
-       {
-          "image": "assets/img/client/4.png"
-        } 
-
-      ]
-  },
   "ads":{
-    "title": "Become a Real Estate Agent",
+    "title": "Sign up to register your property",
     "btntxt": "REGISTER NOW",
     "url": "/Registration"
   },
@@ -232,281 +214,22 @@
 
       ]
   },
-   "featuredproject":{
-    "title": "Featured Projects",
-    "items":[
-        { 
-          "titleFirstItem": "Vegas Landville Apartment",
-          "imageFirstItem": "assets/img/feature/1.png",
-          "priceFirstItem":"$350/mo",
-          "contentFirstItem":"4 Bed, 3 Beth, Flats. Area 1448-2537 sqft",
-          "urlFirstItem": "#",
-
-          "titleSecondItem": "Jason Landville Apartment",
-          "imageSecondItem": "assets/img/feature/2.png",
-          "iconSecondItem":"assets/img/icons/l1.png",
-          "urlSecondItem": "#",
-          "olderpriceSecondItem": "$790/mo",
-          "newerpriceSecondItem": "$350/mo",
-          "areaSecondItem":"1898 sq.",
-          "authornameSecondItem":"Vilma Jarvi By Redbrox",
-          "featuresSecondItem":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ],
-
-          "titleThirdItem": "State Landville Apartment",
-          "imageThirdItem": "assets/img/feature/2.png",
-          "iconThirdItem":"assets/img/icons/l2.png",
-          "urlThirdItem": "#",
-          "olderpriceThirdItem": "$790/mo",
-          "newerpriceThirdItem": "$350/mo",
-          "areaThirdItem":"1898 sq.",
-          "authornameThirdItem":"Vilma Jarvi By Redbrox",
-          "featuresThirdItem":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        { 
-          "titleFirstItem": "Jason Landville Apartment",
-          "imageFirstItem": "assets/img/feature/1.png",
-          "priceFirstItem":"$350/mo",
-          "contentFirstItem":"4 Bed, 3 Beth, Flats. Area 1448-2537 sqft",
-          "urlFirstItem": "#",
-
-          "titleSecondItem": "Jason Landville Apartment",
-          "imageSecondItem": "assets/img/feature/5.png",
-          "iconSecondItem":"assets/img/icons/l4.png",
-          "urlSecondItem": "#",
-          "olderpriceSecondItem": "$790/mo",
-          "newerpriceSecondItem": "$350/mo",
-          "areaSecondItem":"1898 sq.",
-          "authornameSecondItem":"Vilma Jarvi By Redbrox",
-          "featuresSecondItem":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ],
-
-          "titleThirdItem": "Jason Landville Apartment",
-          "imageThirdItem": "assets/img/feature/5.png",
-          "iconThirdItem":"assets/img/icons/l5.png",
-          "urlThirdItem": "#",
-          "olderpriceThirdItem": "$790/mo",
-          "newerpriceThirdItem": "$350/mo",
-          "areaThirdItem":"1898 sq.",
-          "authornameThirdItem":"Vilma Jarvi By Redbrox",
-          "featuresThirdItem":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        }
-
-      ]
-  },   
-  "recentproperties":{
-    "title": "Recent Properties for Sold",
-    "btnurl":"/property",
-      "items":[
-        {
-          "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/4.png",
-          "icon":"assets/img/icons/l3.png",
-          "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        {
-          "title": "Vegas Landville Apartment",
-          "image": "assets/img/feature/5.png",
-          "icon":"assets/img/icons/l4.png",
-          "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        {
-          "title": "United Landville Apartment",
-          "image": "assets/img/feature/6.png",
-          "icon":"assets/img/icons/l5.png",
-          "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        {
-          "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/7.png",
-          "icon":"assets/img/icons/l6.png",
-          "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        }
-      ]
-  },
-   "propertiesbycities":{
-    "title": "Properties by Cities",
-    "items":[
-        {
-          "class": "col-lg-2 col-sm-6",
-          "sectionclass":"sc-one",
-          "image":"assets/img/city/b3.jfif",
-          "city":"New York",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        },
-        {
-          "class": "col-lg-2 col-sm-6",
-          "sectionclass":"sc-two",
-          "image":"assets/img/city/i8.jpg",
-          "city":"Las Vegas",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        },
-        {
-          "class": "col-lg-5 col-sm-6",
-          "sectionclass":"",
-          "image":"assets/img/city/i5.jpg",
-          "city":"San Srancisco",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        },
-        {
-          "class": "col-lg-3 col-sm-6",
-          "sectionclass":"sc-three",
-          "image":"assets/img/city/o7.jfif",
-          "city":"United State",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        },  
-        {
-          "class": "col-lg-4 col-sm-6",
-          "sectionclass":"",
-          "image":"assets/img/city/r3.jpg",
-          "city":"Vilma Jarvi",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        },
-         {
-          "class": "col-lg-4 col-sm-6",
-          "sectionclass":"",
-          "image":"assets/img/city/room8.jfif",
-          "city":"United State",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        },
-        {
-          "class": "col-lg-3 col-sm-6",
-          "sectionclass":"",
-          "image":"assets/img/city/room9.jfif",
-          "city":"New York",
-          "url":"/properties-by-city",
-          "content":"12 Properties"
-        }
-
-      ],
-    "intro":[
-      {
-        "title":"Looking for the new home?",
-        "url":"",
-        "content":"10 new offers every day. 350 offers on site, trusted by a community of thousands of users.",
-        "icon":"assets/img/icons/9.png",
-        "class":"single-intro-media-active"
-      },
-      {
-        "title":"Want to sell your home?",
-        "url":"",
-        "content":"10 new offers every day. 350 offers on site, trusted by a community of thousands of users.",
-        "icon":"assets/img/icons/10.png"
-      }
-    ]
-  },
    "property":{
       "items":[
         {
-          "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/4.png",
+          "title": "Ibeju Lekki Apartment",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l3.png",
           "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
+          "olderprice": "$70/mo",
+          "newerprice": "$50/mo",
           "area":"1898 sq.",
           "authorname":"Vilma Jarvi By Redbrox",
           "cat":"cat1 cat3 cat4",
           "features":[
             {
               "icon":"fa fa-bed",
-              "title":"05 Bed"
+              "title":"04 Bed"
             },
             {
               "icon":"fa fa-bath",
@@ -516,11 +239,11 @@
         },
         {
           "title": "Vegas Landville Apartment",
-          "image": "assets/img/feature/5.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l4.png",
            "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
+          "olderprice": "$90/mo",
+          "newerprice": "$50/mo",
           "area":"1898 sq.",
           "authorname":"Vilma Jarvi By Redbrox",
           "cat":"cat2 cat3",
@@ -537,11 +260,11 @@
         },
         {
           "title": "United Landville Apartment",
-          "image": "assets/img/feature/6.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l5.png",
            "url": "/property-details",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
+          "olderprice": "$90/mo",
+          "newerprice": "$50/mo",
           "area":"1898 sq.",
           "authorname":"Vilma Jarvi By Redbrox",
           "cat":"cat1 cat2",
@@ -558,7 +281,7 @@
         },
         {
           "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/7.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l2.png",
            "url": "/property-details",
           "olderprice": "$790/mo",
@@ -579,7 +302,7 @@
         },
         {
           "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/8.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l3.png",
            "url": "/property-details",
           "olderprice": "$790/mo",
@@ -600,7 +323,7 @@
         },
         {
           "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/9.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l4.png",
            "url": "/property-details",
           "olderprice": "$790/mo",
@@ -621,7 +344,7 @@
         },
         {
           "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/3.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l5.png",
            "url": "/property-details",
           "olderprice": "$790/mo",
@@ -642,7 +365,7 @@
         },
         {
           "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/3.png",
+          "image": "assets/img/feature/i8.jpg",
           "icon":"assets/img/icons/l6.png",
            "url": "/property-details",
           "olderprice": "$790/mo",
@@ -661,33 +384,6 @@
             }
           ]
         }
-      ]
-  },
-    "topquthor":{
-    "title": "Top  Author",
-    "items":[
-        {
-          "icon": "assets/img/author/5.png",
-          "compnaname":"Get React",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/author/2.png",
-          "compnaname":"Awesome Technology",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/author/3.png",
-          "compnaname":"Black And White",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/author/4.png",
-          "compnaname":"React May",
-          "url":"#"
-        }
-
-
       ]
   },
    "propertybtcities":{
@@ -850,92 +546,6 @@
           "area":"1898 sq.",
           "authorname":"Vilma Jarvi By Redbrox",
           "cat":"cat1 cat3 cat4",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        }
-      ]
-  },
-  "recinabdproperties":{
-    "btnurl":"#",
-    "title":"Recommended",
-      "items":[
-        {
-          "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/4.png",
-          "icon":"assets/img/icons/l3.png",
-          "url": "#",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        {
-          "title": "Vegas Landville Apartment",
-          "image": "assets/img/feature/5.png",
-          "icon":"assets/img/icons/l4.png",
-          "url": "#",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        {
-          "title": "United Landville Apartment",
-          "image": "assets/img/feature/6.png",
-          "icon":"assets/img/icons/l5.png",
-          "url": "#",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
-          "features":[
-            {
-              "icon":"fa fa-bed",
-              "title":"05 Bed"
-            },
-            {
-              "icon":"fa fa-bath",
-              "title":"02 Bath"
-            }
-          ]
-        },
-        {
-          "title": "Jason Landville Apartment",
-          "image": "assets/img/feature/7.png",
-          "icon":"assets/img/icons/l6.png",
-          "url": "#",
-          "olderprice": "$790/mo",
-          "newerprice": "$350/mo",
-          "area":"1898 sq.",
-          "authorname":"Vilma Jarvi By Redbrox",
           "features":[
             {
               "icon":"fa fa-bed",

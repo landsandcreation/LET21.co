@@ -5,10 +5,7 @@ import Explore from './section-components/explore';
 import FeaturedProperties from './section-components/featured-properties';
 import Ads from './section-components/ads';
 import PropertiesByCities from './section-components/properties-by-cities';
-import RecentProperties from './section-components/recent-properties';
-import FeaturedPorject from './section-components/featured-project';
 import WhyChooseUs from './section-components/why-choose-us';
-import OurPartner from './section-components/our-partner';
 import Footer from './global-components/footer';
 
 const Home_V1 = () => {
@@ -19,10 +16,7 @@ const Home_V1 = () => {
         <FeaturedProperties />
         <Ads />
         <PropertiesByCities />
-        <RecentProperties />
-        <FeaturedPorject />
         <WhyChooseUs />
-        <OurPartner />
         <Footer />
     </div>
 }

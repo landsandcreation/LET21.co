@@ -10,7 +10,6 @@ import HomeV4 from './components/home-v4';
 import Property from './components/property';
 import AvilableProperty from './components/availavbe-property';
 import PropertiesByCity from './components/properties-by-city';
-import RecentProperties from './components/recent-properties';
 import PropertyDetails from './components/property-details';
 import About from './components/about';
 import Advisor from './components/advisor';
@@ -26,6 +25,8 @@ import SearchMap from './components/search-map';
 import SearchGrid from './components/search-grid';
 import SearchList from './components/search-list';
 import AddNew from './components/add-property';
+import BookingDetails from './components/section-components/booking-details';
+import CompletingBookingContent from './components/section-components/completing-booking-content';
 
 class Root extends Component {
     render() {
@@ -41,13 +42,14 @@ class Root extends Component {
                     <Route path="/property" component={Property} />
                     <Route path="/availavbe-property" component={AvilableProperty} />
                     <Route path="/properties-by-city" component={PropertiesByCity} />
-                    <Route path="/recent-properties" component={RecentProperties} />
                     <Route path="/property-details" component={PropertyDetails} />
                     <Route path="/about" component={About} />
                     <Route path="/advisor" component={Advisor} />
                     <Route path="/pricing" component={Pricing} />
                     <Route path="/user-list" component={UserList} />
                     <Route path="/registration" component={Registraion} />
+                    <Route path="/booking-details" component={BookingDetails} />
+                    <Route path="/completing-booking-content" component={CompletingBookingContent} />
                     <Route path="/error" component={Error} />
                     <Route path="/faq" component={Faq} />
                     <Route path="/news" component={News} />

@@ -1,0 +1,102 @@
+
+.create{
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+
+.BookingDetailsContent {
+ .butt{
+   border: none;
+   background-color: none;
+   &>button{
+     border: none;
+     background-color: none;
+   }
+ }
+    margin-bottom: 150px;
+  display: flex;
+  width: 100%;
+  
+ 
+  &__second{
+    flex-basis: 30%;
+  }
+  
+  &__first{
+    flex-basis: 70%;
+  margin-left: 50px;
+
+  
+  &__colu{
+    display: flex;
+        
+  margin-bottom: 30px;
+  
+    &__one{
+      flex-basis: 40%;
+      
+  
+  &>input{
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+
+  }
+    }
+    &__two{
+      flex-basis: 40%;
+      
+      &>input{
+        padding: 8px;
+        width: 80%;
+        border-radius: 5px;
+
+  
+      }
+    }
+    &__three{
+     margin-bottom: 30px;
+  &>input{
+    padding: 8px;
+    width: 72%;
+    border-radius: 5px;
+
+  }
+    }
+  }
+  
+  &__bolu{
+    display: flex;
+  margin-bottom: 30px;
+
+    &__four{
+      flex-basis: 15%;
+  &>input{
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+
+  }
+    }
+    &__five{
+      flex-basis: 15%;
+  &>input{
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+ 
+  }
+    }
+    &__six{
+      flex-basis: 60%;
+  &>input{
+    padding: 8px;
+    width: 70%;
+    border-radius: 5px;
+   
+  }
+    }
+  }
+}
+}

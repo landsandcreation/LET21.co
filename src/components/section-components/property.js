@@ -20,10 +20,10 @@ class Property extends Component {
                     <div className="property-filter-menu-wrap">
                       <div className="property-filter-menu portfolio-filter text-center">
                         <button data-filter="*" className="active">All Properties</button>
-                        <button data-filter=".cat1">Top Properties</button>
-                        <button data-filter=".cat2">Biggest Home</button>
-                        <button data-filter=".cat3">High Demand</button>
-                        <button data-filter=".cat4">Verified Home</button>
+                        <button data-filter=".cat1">Biggest Shortlets</button>
+                        <button data-filter=".cat2">Medium Shortlets</button>
+                        <button data-filter=".cat3">Small Shortlets</button>
+                        <button data-filter=".cat4">General Shortlets</button>
                       </div>
                     </div>
                   </div>

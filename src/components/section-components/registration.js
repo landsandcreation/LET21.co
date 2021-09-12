@@ -17,12 +17,12 @@ class Registration extends Component {
             <div className="row justify-content-center">
               <div className="col-xl-4 col-lg-5 col-md-6 mb-5 mb-md-0">
                 <form className="contact-form-wrap contact-form-bg">
-                  <h4>Login</h4>
+                  <h4>Email Address</h4>
                   <div className="rld-single-input">
-                    <input type="text" placeholder="Entry Login" />
+                    <input type="text" placeholder="Email Address" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="password" placeholder="Entry Password" />
+                    <input type="password" placeholder="Password" />
                   </div>
                   <div className="btn-wrap">
                     <button className="btn btn-yellow">Sign In</button>
@@ -39,10 +39,10 @@ class Registration extends Component {
                     <input type="text" placeholder="Last Name" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="text" placeholder="Select User role" />
+                    <input type="text" placeholder="Email Address" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="text" placeholder="Password" />
+                    <input type="phone" placeholder="Password" />
                   </div>
                   <div className="rld-single-input">
                     <input type="text" placeholder="Re-enter password" />
