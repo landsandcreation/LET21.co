@@ -22,11 +22,11 @@
   },
 
   "explore":{
-    "title": "Latest Available Shortlets",
+    "title": "Most Booked Location",
     "items":[
         {
           "city": "Lekki",
-          "image": "assets/img/explore/fra.jpg"
+          "image": "assets/img/explore/ema.jpg"
     
         },
         {
@@ -48,7 +48,7 @@
       ]
   }, 
   "featuredproperties":{
-    "title": "Featured Shortlets",
+    "title": "Latest Available",
     "firstitem":
       {
         "title": "Ibeju Lekki Apartment",
