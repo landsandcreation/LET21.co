@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import footerdata from '../../data/footerdata.json';
+import style from "./style.module.scss"
 
 class Footer_v1 extends Component {
 
@@ -76,16 +77,8 @@ class Footer_v1 extends Component {
                         </ul>
                       </div>
                     </div>
-                    <div className="col-lg-3 col-sm-6">
-                      <form className="widget widget-subscribe" method="GET">
-                        <div className="rld-single-input">
-                          <input type="text" name="name" placeholder="Full Name" />
-                        </div>
-                        <div className="rld-single-input">
-                          <input type="text" name="email" placeholder="Your@email.com" />
-                        </div>
-                        <button className="btn btn-yellow w-100">Subscribe</button>
-                      </form>
+                    <div>
+                      <Link  to="/"><img src={publicUrl+"../assets/img/ww.jpeg"} alt="logo"  style={{ ...style, width: "220px", height: "150px"}}/></Link>
                     </div>
                   </div>
                 </div>

@@ -2,7 +2,7 @@
     ## Banner
 ----------------------------------------------*/
 .banner-inner-wrap {
-	height: 100vh;
+	height: 100.1vh;
 	display: flex;
 	align-items: center;
 }
@@ -76,7 +76,7 @@
     		&:hover,
     		&:focus,
     		&.active {
-			    background: var(--main-color-one);
+			    background: #fa5b05;
 			    color: $color-white;
     		}
 		}

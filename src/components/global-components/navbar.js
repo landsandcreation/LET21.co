@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import style from "./style.module.scss"
 
 class Navbar extends Component {
 
@@ -18,10 +19,13 @@ class Navbar extends Component {
                         <span className="icon-right" />
                       </button>
                     </div>
-                  
-                    <div className="nav-right-part nav-right-part-mobile">
-                      <Link className="btn btn-yellow" to="/add-property">Owner</Link>
+                    <div>
+                      <Link  to="/"><img src={publicUrl+"../assets/img/logow.png"} alt="logo"  style={{ ...style, width: "150px", height: "40px"}}/></Link>
                     </div>
+                    <div className="nav-right-part nav-right-part-mobile">
+                   
+                    </div>
+                   
                     <div className="collapse navbar-collapse" id="realdeal_main_menu">
                       <ul className="navbar-nav menu-open readeal-top">
                       <li><Link to="/">Home</Link></li>
@@ -31,6 +35,7 @@ class Navbar extends Component {
                         <li><Link to="/contact">Contact Us</Link></li>
                       </ul>
                     </div>
+                  
                     <div className="nav-right-part nav-right-part-desktop readeal-top">
                       <Link className="btn btn-yellow" to="/add-property">OWNERS DASHBOARD<span className="right"><i className="la la-plus" /></span></Link>
                       

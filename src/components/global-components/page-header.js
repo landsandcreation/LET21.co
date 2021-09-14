@@ -9,7 +9,7 @@ class Page_header extends Component {
         let publicUrl = process.env.PUBLIC_URL+'/'
         let Subheader = this.props.subheader ? this.props.subheader : HeaderTitle
         const inlineStyle = {
-            backgroundImage: 'url('+publicUrl+'/assets/img/bg/o3.jpg)'
+            backgroundImage: 'url('+publicUrl+'/assets/img/banner/newsletter.png)'
         }
         return (
             <div className="breadcrumb-area jarallax" style= { inlineStyle }>

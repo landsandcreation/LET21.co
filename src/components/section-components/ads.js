@@ -13,7 +13,7 @@ class Ads extends Component {
         let data = sectiondata.ads
 
         const inlineStyle = {
-            backgroundImage: 'url('+publicUrl+'/assets/img/bg/1.png)'
+            backgroundImage: 'url('+publicUrl+'../assets/img/bg/newsletter.png)'
         }
 
     return <div className="call-to-action-area pd-top-70">
