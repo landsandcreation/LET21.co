@@ -25,7 +25,7 @@ class Registration extends Component {
                     <input type="password" placeholder="Password" />
                   </div>
                   <div className="btn-wrap">
-                    <button className="btn btn-yellow">Sign In</button>
+                    <button className="btn btn-yellow" href="add-property">Sign In</button>
                   </div>
                 </form>
               </div>
@@ -48,7 +48,7 @@ class Registration extends Component {
                     <input type="text" placeholder="Re-enter password" />
                   </div>
                   <div className="btn-wrap">
-                    <button className="btn btn-yellow">Register</button>
+                    <button className="btn btn-yellow" href="/add-property">Register</button>
                   </div>
                   <ul className="social-icon">
                     <li className="ml-0">

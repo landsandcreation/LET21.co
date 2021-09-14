@@ -20,7 +20,7 @@ class Navbar extends Component {
                       </button>
                     </div>
                     <div>
-                      <Link  to="/"><img src={publicUrl+"../assets/img/logow.png"} alt="logo"  style={{ ...style, width: "150px", height: "40px"}}/></Link>
+                      <Link  to="/"><img src={publicUrl+"../assets/img/logow.png"} alt="logo"  style={{ ...style, width: "120px", height: "40px"}}/></Link>
                     </div>
                     <div className="nav-right-part nav-right-part-mobile">
                    
@@ -29,7 +29,9 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="realdeal_main_menu">
                       <ul className="navbar-nav menu-open readeal-top">
                       <li><Link to="/">Home</Link></li>
-                      <li><Link to="/registration">Login</Link></li>
+                      <li><Link to="/registration">Login/Sign Up</Link></li>
+                      <li><Link to="/registration">Host your property</Link></li>
+
                   
                       
                         <li><Link to="/contact">Contact Us</Link></li>

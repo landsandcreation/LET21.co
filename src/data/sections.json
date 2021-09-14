@@ -26,22 +26,22 @@
     "items":[
         {
           "city": "Lekki",
-          "image": "assets/img/explore/o9.jpg"
+          "image": "assets/img/explore/fra.jpg"
     
         },
         {
-          "city": "Ajah",
-          "image": "assets/img/explore/o9.jpg"
+          "city": "Ikoyi",
+          "image": "assets/img/explore/bab.jpg"
          
         },
         {
           "city": "Victoria Island",
-          "image": "assets/img/explore/o3.jpg"
+          "image": "assets/img/explore/seun.jpg"
          
         },
         {
           "city": "Ikeja",
-          "image": "assets/img/explore/o3.jpg"
+          "image": "assets/img/explore/fra.jpg"
        
         }
 
