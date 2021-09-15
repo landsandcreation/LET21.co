@@ -7,7 +7,7 @@ import Footer from './global-components/footer';
 const SearchList = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Apartment for rent in Gulshan" subheader="Apartment rent" />
+        <PageHeader headertitle="Apartment for rent in Lekki" subheader="Apartment rent" />
         <SearchListSection />
         <Footer />
     </div>

@@ -54,6 +54,7 @@ class Banner extends Component {
                                 </select>
                               </div>
                             </div>
+                         
                             <div className="col-xl-2 col-lg-4 col-md-4">
                               <div className="rld-single-select">
                                 <select className="select single-select">
@@ -62,6 +63,7 @@ class Banner extends Component {
                                 </select>
                               </div>
                             </div>
+                          
                             <div className="col-xl-2 col-lg-4 col-md-4">
                               <div className="rld-single-select">
                                 <select className="select single-select">

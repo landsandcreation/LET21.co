@@ -19,14 +19,14 @@ class PropertyDetails extends Component {
               <div className="property-details-slider">
                 <div className="item">
                   <div className="thumb">
-                    <img src={ publicUrl+"../assets/img/news/i8.jpg"} alt={ imagealt }/>
+                    <img src={ publicUrl+"../assets/img/feature/i8.jpg"} alt={ imagealt }/>
                   </div>
                 </div>
              
               </div>
               <div className="property-details-slider-info">
-                <h3><span>$350/mo</span> Ibeju Lekki Apartments</h3>
-                <del>$500</del>
+                <h3><span>35000/mo</span> Ibeju Lekki Apartments</h3>
+                <del>50000</del>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4">

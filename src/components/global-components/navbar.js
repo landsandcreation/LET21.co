@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import style from "./style.module.scss"
-
+import Datepicker from './Datepicker.js';
 class Navbar extends Component {
 
     render() {
@@ -20,7 +20,7 @@ class Navbar extends Component {
                       </button>
                     </div>
                     <div>
-                      <Link  to="/"><img src={publicUrl+"../assets/img/logow.png"} alt="logo"  style={{ ...style, width: "120px", height: "40px"}}/></Link>
+                      <Link  to="/"><img src={publicUrl+"../assets/img/logow.png"} alt="logo"  style={{ ...style, width: "120px", marginLeft: "20px", height: "40px"}}/></Link>
                     </div>
                     <div className="nav-right-part nav-right-part-mobile">
                    

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
 import { Link } from 'react-router-dom';
-
+import style from "./booking.module.scss"
 class Explore extends Component {
 
 
@@ -22,7 +22,7 @@ class Explore extends Component {
             <div key={ i } className="col-lg-3 col-sm-6">
             <div className="single-explore">
               <div className="thumb">
-                <img src={ publicUrl+item.image } alt="explore" />
+                <img src={ publicUrl+item.image } alt="explore"  style={{ ...style, width: "255px", height: "180px"}} />
                 <a href="#"><i className="fa fa-paper-plane" /></a>
               </div>
               <div className="details readeal-top">

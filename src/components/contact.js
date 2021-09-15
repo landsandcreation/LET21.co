@@ -59,8 +59,7 @@ const Contact = () => {
 		      <div className="col-xl-3 col-sm-6">
 		        <div className="single-contact-info">
 		          <p><i className="fa fa-phone" />Address</p>
-		          <h5>Emperor Plaza, Beside Shoprite, Sangotedo, Lekki-Epe Way, Lagos, Nigeria.</h5>
-		          <h5>CA 95046, United States</h5>
+		          <h5>Emperor Plaza, Beside Shoprite, Sangotedo, Lekki-Epe Way, Lagos, Nigeria.</h5>  
 		        </div>
 		      </div>
 		    </div>
