@@ -1,17 +1,17 @@
 import React from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
-import RegistrationSection from './section-components/registration';
+import ResetSection from './section-components/reset';
 import Footer from './global-components/footer';
 
-const Registration = () => {
+const Reset = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Registration" />
-        <RegistrationSection />
+        <PageHeader headertitle="Reset Password" />
+        <ResetSection />
         <Footer />
     </div>
 }
 
-export default Registration
+export default Reset
 

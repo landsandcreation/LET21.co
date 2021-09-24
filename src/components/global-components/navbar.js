@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import style from "./style.module.scss"
-import Datepicker from './Datepicker.js';
+
 class Navbar extends Component {
 
     render() {
@@ -29,8 +29,18 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="realdeal_main_menu">
                       <ul className="navbar-nav menu-open readeal-top">
                       <li><Link to="/">Home</Link></li>
-                      <li><Link to="/registration">Login/Sign Up</Link></li>
-                      <li><Link to="/registration">Host your property</Link></li>
+                      <li><Link to="/registration">Sign Up</Link></li>
+                     
+                      <li className="menu-item-has-children">
+                          <a href="#">Login</a>
+                          <ul className="sub-menu">
+                         
+                            <li><Link to="/login">Login as travelers</Link></li>
+                            <li><Link to="/registration">Login as owner</Link></li>
+                          </ul>
+                        </li>
+                     
+                      <li><Link to="/registration">List your property</Link></li>
 
                   
                       

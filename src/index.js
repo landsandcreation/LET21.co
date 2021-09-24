@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PlacesAutocomplete from 'react-places-autocomplete';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, HashRouter, Route, Switch } from "react-router-dom";
 import blogdata from './data/blogdata.json';
@@ -15,7 +16,9 @@ import About from './components/about';
 import Advisor from './components/advisor';
 import Pricing from './components/pricing';
 import UserList from './components/user-list';
-import Registraion from './components/registration';
+import Registration from './components/registration';
+import Reset from './components/reset';
+import Verify from './components/verify';
 import Error from './components/error';
 import Faq from './components/faq';
 import News from './components/news';
@@ -26,14 +29,19 @@ import SearchGrid from './components/search-grid';
 import SearchList from './components/search-list';
 import AddNew from './components/add-property';
 import BookingDetails from './components/section-components/booking-details';
+import Login from './components/login';
 import CompletingBookingContent from './components/section-components/completing-booking-content';
 
 class Root extends Component {
+    
     render() {
         return(
+          
             <Router>
                 <HashRouter basename="/">
                 <div>
+     
+   
                 <Switch>
                     <Route exact path="/" component={HomeV1} />
                     <Route path="/home-v2" component={HomeV2} />
@@ -47,8 +55,11 @@ class Root extends Component {
                     <Route path="/advisor" component={Advisor} />
                     <Route path="/pricing" component={Pricing} />
                     <Route path="/user-list" component={UserList} />
-                    <Route path="/registration" component={Registraion} />
+                    <Route path="/registration" component={Registration} />
+                    <Route path="/reset" component={Reset} />
+                    <Route path="/verify" component={Verify} />
                     <Route path="/booking-details" component={BookingDetails} />
+                    <Route path="/login" component={Login} />
                     <Route path="/completing-booking-content" component={CompletingBookingContent} />
                     <Route path="/error" component={Error} />
                     <Route path="/faq" component={Faq} />

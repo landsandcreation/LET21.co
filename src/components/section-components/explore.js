@@ -22,7 +22,7 @@ class Explore extends Component {
             <div key={ i } className="col-lg-3 col-sm-6">
             <div className="single-explore">
               <div className="thumb">
-                <img src={ publicUrl+item.image } alt="explore"  style={{ ...style, width: "255px", height: "180px"}} />
+                <img src={ publicUrl+item.image } alt="explore"  style={{ ...style, background: "cover", objectFit: "cover", height: "180px"}} />
                 <a href="#"><i className="fa fa-paper-plane" /></a>
               </div>
               <div className="details readeal-top">
