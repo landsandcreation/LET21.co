@@ -35,7 +35,7 @@ class Navbar extends Component {
                           <a href="#">Login</a>
                           <ul className="sub-menu">
                          
-                            <li><Link to="/login">Login as travelers</Link></li>
+                            <li><Link to="/login">Login as travellers</Link></li>
                             <li><Link to="/registration">Login as owner</Link></li>
                           </ul>
                         </li>
