@@ -1,0 +1,191 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoint";
+
+
+.create{
+  margin-top: 150px;
+  margin-left: 100px;
+  @include ssm{
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+}
+
+.BookingDetailsContent {
+  margin-top: 100px;
+  
+
+width: 100%;
+
+        @include ssm {
+margin-bottom: 0px;
+   display: block;
+
+  }
+
+
+&__first{
+  flex-basis: 100%;
+margin-left: 50px;
+@include ssm {
+  margin-left: 0px;
+   
+    }
+
+&__colu{
+  display: flex;
+      
+margin-bottom: 30px;
+@include ssm {
+  width: 99%;
+     display: block;
+     margin: auto;
+   
+    }
+  &__one{
+    flex-basis: 40%;
+    
+
+&>input{
+  padding: 8px;
+  width: 80%;
+  border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
+}
+  }
+  &__two{
+    flex-basis: 40%;
+    
+    &>input{
+      padding: 8px;
+      width: 80%;
+      border-radius: 5px;
+      @include ssm {
+        width: 99%;
+           display: block;
+           margin: auto;
+           margin-bottom: 10px;
+         
+          }
+    }
+  }
+  &__three{
+   margin-bottom: 30px;
+&>input{
+  padding: 8px;
+  width: 72%;
+  border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
+}
+  }
+}
+
+&__bolu{
+  display: flex;
+margin-bottom: 30px;
+@include ssm {
+  width: 99%;
+     display: block;
+     margin: auto;
+     margin-bottom: 10px;
+   
+    }
+  &__four{
+    flex-basis: 15%;
+&>input{
+  padding: 8px;
+  width: 80%;
+  border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
+}
+  }
+  &__five{
+    flex-basis: 15%;
+&>input{
+  padding: 8px;
+  width: 80%;
+  border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
+}
+  }
+  &__six{
+    flex-basis: 60%;
+&>input{
+  padding: 8px;
+  width: 70%;
+  border-radius: 5px;
+  @include ssm {
+    width: 99%;
+       display: block;
+       margin: auto;
+       margin-bottom: 10px;
+     
+      }
+}
+  }
+}
+
+  &__profile {
+    &:not(:last-child) {
+      padding-bottom: 1.77em;
+      margin-bottom: 1.77em;
+      border-bottom: 1px solid #f2f2f6;
+
+    }
+  }
+}
+
+&__butt{
+ 
+
+width: 100%;
+  &>button{
+    background-color: #fa5b05;
+
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+   
+      width: 74%;
+      @include ssm {
+        width: 99%;
+     
+        margin-bottom: 60px;
+        position: absolute;
+           margin: auto;
+         
+          }
+    &>a{
+    font-size: 15px;
+  font-weight: 700;
+    text-decoration: none;
+      color: white;
+    }
+   
+  }
+}
+}
