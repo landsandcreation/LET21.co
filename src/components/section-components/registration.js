@@ -75,7 +75,7 @@ return(
                   <div className="btn-wrap">
                    <button className="btn btn-yellow" type="submit">Register</button>
                   </div><br></br>
-                  <h6>Already have an account?<a href="">Login</a></h6>
+                  <h6>Already have an account?<Link to="/login">Login</Link></h6>
                   <ul className="social-icon">
                     <li className="ml-0">
                       <a href="#" target="_blank"><i className="fa fa-facebook  " /></a>
