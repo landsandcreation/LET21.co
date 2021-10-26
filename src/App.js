@@ -31,6 +31,7 @@ import SearchList from './components/search-list';
 import AddNew from './components/add-property';
 import BookingDetails from './components/section-components/booking-details';
 import Login from './components/login';
+import DatePicker from './common/date-picker';
 import CompletingBookingContent from './components/section-components/completing-booking-content';
 import { toast } from "react-toastify"
 
@@ -53,6 +54,7 @@ setAuth(boolean)
                 <Switch>
                     <Route exact path="/" component={HomeV1} />
                     <Route path="/home-v2" component={HomeV2} />
+                    <Route path="/date-picker" component={DatePicker} />
                     <Route path="/home-v3" component={HomeV3} />
                     <Route path="/home-v4" component={HomeV4} />
                     <Route path="/property" component={Property} />

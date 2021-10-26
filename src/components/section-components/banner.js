@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
-
+import  DatePicker  from "../../common/date-picker";
 class Banner extends Component {
 
     componentDidMount() {
@@ -43,25 +43,28 @@ class Banner extends Component {
                           <div className="row">
                             <div className="col-xl-4 col-lg-6 col-md-6">
                               <div className="rld-single-input left-icon">
-                                <input type="text" placeholder="Where are you going?" />
+                               <div className="rld-single-select">
+                                <select className="select single-select">
+                                  <option value={1} disable="true">Where are you going</option>
+                                </select>
+                              </div>
+                                
                               </div>
                             </div>
                             <div className="col-xl-2 col-lg-6 col-md-6">
-                              <div className="rld-single-select">
-                                <select className="select single-select">
-                                  <option value={1}>Check-in-date</option>
+                              
+                                <label>Check-in-date</label>
+                                 <DatePicker/>
                                  
-                                </select>
-                              </div>
+                               
                             </div>
                          
-                            <div className="col-xl-2 col-lg-4 col-md-4">
-                              <div className="rld-single-select">
-                                <select className="select single-select">
-                                  <option value={1}>Check-out-date</option>
-                          
-                                </select>
-                              </div>
+                            <div className="col-xl-2 col-lg-4 col-md-4" >
+                              <label>Check out date</label>
+                                <DatePicker
+          
+        />
+                           
                             </div>
                           
                             <div className="col-xl-2 col-lg-4 col-md-4">
