@@ -1,38 +1,52 @@
 
-import React, { Component, useState } from 'react';
+import React, { Component, Fragment, useState } from 'react';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
 import axios from 'axios';
 import {Link} from "react-router-dom"
 import {useHistory} from "react-router-dom"
 
-export default class Registration extends Component 
-{
+const Registration = ({ setauth }) => {
 
-handleSubmit = e => {
-    e.preventDefault();
+const [inputs, setInputs] = useState({
+  fName: "",
+  lName: "",
+  phone: "",
+  email: "",
+  password: ""
+  
+})
+const { fName, lName, phone, email, password } = inputs;
 
-    const data =  {
-        fName: this.fName,
-        lName: this.lName,
-        email: this.email,
-        password: this.password,
-        phone: this.phone,
-      
-    }
-   axios.post('http://Let21backend.herokuapp.com/traveler/sign-up', data).then(
-       res => {
-           console.log(res)
-       }
-   ).catch(
-       err => {
-        console.log(err);
-       }
-       
-   )
+const onChange = e => {
+  setInputs({...inputs, [e.target.name]: e.target.value });
+}
+
+const onSubmitForm = async (e) => {
+  e.preventDefault()
+
+  try {
+
+    const body = {fName, lName, phone, email, password};
+    const response = await fetch("https://Let21backend.herokuapp.com/traveler/sign-up", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body)
+    });
+
+    const parseRes = await response.json();
+    
+localStorage.setItem("token", parseRes.token);
+setauth(true)
+
+
+
+  } catch (err) {
+    console.error(err.message);
+  }
 };
-render(){
 return(
+  <Fragment>
     <div className="register-page-area pd-bottom-100">
           <div className="container">
             <div className="row justify-content-center">
@@ -40,23 +54,24 @@ return(
            
               </div>
               <div className="col-xl-4 col-lg-5 col-md-6">
-                <form className="contact-form-wrap contact-form-bg" onSubmit={this.handleSubmit}>
+                <form className="contact-form-wrap contact-form-bg" onSubmit={onSubmitForm}>
                   <h4>Registration</h4>
                   <div className="rld-single-input">
-                    <input type="text" onChange={e => this.fName = e.target.value}   placeholder="First Name" />
+                    <input type="text" name="fName" value={fName} onChange= {e => onChange(e)} placeholder="First Name" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="text" onChange={e => this.lName = e.target.value}  placeholder="Last Name" />
+                    <input type="text"  name="lName" value={lName} onChange= {e => onChange(e)} placeholder="Last Name" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="email"  onChange={e => this.email = e.target.value}  placeholder="Email Address" />
+                    <input type="phone" name="phone" value={phone} onChange= {e => onChange(e)} placeholder="Phone number" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="password" onChange={e => this.password = e.target.value}   placeholder="Password" />
+                    <input type="email" name="email" value={email} onChange= {e => onChange(e)}  placeholder="Email Address" />
                   </div>
                   <div className="rld-single-input">
-                    <input type="phone" onChange={e => this.phone = e.target.value}  placeholder="Phone number" />
+                    <input type="password" name="password" value={password} onChange= {e => onChange(e)} placeholder="Password" />
                   </div>
+                  
                   <div className="btn-wrap">
                    <button className="btn btn-yellow" type="submit">Register</button>
                   </div><br></br>
@@ -77,7 +92,8 @@ return(
             </div>
           </div>
         </div>
-    )
-}
-    }
-
+        </Fragment>
+    );
+};
+    
+export default Registration;

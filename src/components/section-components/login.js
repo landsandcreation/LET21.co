@@ -1,56 +1,75 @@
-import React, { Component } from 'react';
+import React,{ Component, Fragment, useState } from 'react';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
-import axios from 'axios';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
-class Login extends Component {
-handleSubmit = e => {
-  e.preventDefault();
+import {Link} from "react-router-dom"
+import {useHistory} from "react-router-dom"
+import { toast } from "react-toastify"
 
+const Login = ({ setauth }) => {
 
-  const data = {
-    email: this.email,
-    password: this.password
-  }
-
-axios.post('http://Let21backend.herokuapp.com/traveler/sign-in', data)
-.then(res => {
-  console.log(res)
+const [inputs, setInputs] = useState({
+  email: "",
+  password: "" 
 })
-.catch(err => {
-  console.log(err)
-  
-})
+const { email, password } = inputs;
 
-
+const onChange = (e) => {
+  setInputs({...inputs, [e.target.name]: e.target.value });
 };
 
-    render() {
+const onSubmitForm = async (e) => {
+  e.preventDefault()
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
-        let data = sectiondata.whychooseus
+  try {
+
+    const body = {email, password};
+    const response = await fetch("https://Let21backend.herokuapp.com/owner/sign-in", {
+      method: 'POST',
+      body: JSON.stringify(body)
+    });
+
+    const parseRes = await response.json();
+
+    if(parseRes.token){
+      localStorage.setItem("token", parseRes.token);
+      setauth(true);
+toast.success("login successfully!")      
+    }else{
+      setauth(false)
+      toast.error(parseRes)
+    }
+    
 
 
-    return <div className="register-page-area pd-bottom-100">
+
+  } catch (err) {
+    console.error(err.message);
+  }
+};
+return(
+  <Fragment>
+    <div className="register-page-area pd-bottom-100">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-4 col-lg-5 col-md-6 mb-5 mb-md-0">
-              <form className="contact-form-wrap contact-form-bg" onSubmit={this.handleSubmit}>
-                  <h4>Login</h4>
-                
-                  <div className="rld-single-input">
-                    <input type="email"  onChange={e => this.email = e.target.value}  placeholder="Email Address" />
-                  </div>
-                  <div className="rld-single-input">
-                    <input type="password" onChange={e => this.password = e.target.value}   placeholder="Password" />
-                  </div>
+           
+              </div>
+              <div className="col-xl-4 col-lg-5 col-md-6">
+                <form className="contact-form-wrap contact-form-bg" onSubmit={onSubmitForm}>
+                  <h4>Login Page</h4>
                   
+                  <div className="rld-single-input">
+                    <input type="email" name="email" value={email} onChange= {e => onChange(e)}  placeholder="Email Address" />
+                  </div>
+                  <div className="rld-single-input">
+                    <input type="password" name="password" value={password} onChange= {e => onChange(e)} placeholder="Password" />
+                  </div>
+                 
                   <div className="btn-wrap">
                    <button className="btn btn-yellow" type="submit" >Login</button>
                   </div><br></br>
-                  <h6>Forgot password? <a href="/">Remember me</a></h6><br></br>
-                  <h6>Do not have an account? <a href="/">Sign Up</a></h6>
+                  <h6>Do not have an account?<a href="">Register</a></h6>
+                  <h6>Forgot password?<Link to="/forgot">Remember me</Link></h6>
                   <ul className="social-icon">
                     <li className="ml-0">
                       <a href="#" target="_blank"><i className="fa fa-facebook  " /></a>
@@ -64,11 +83,11 @@ axios.post('http://Let21backend.herokuapp.com/traveler/sign-in', data)
                   </ul>
                 </form>
               </div>
-             
             </div>
           </div>
         </div>
-        }
+        </Fragment>
+    );
 }
-
-export default Login
+    
+export default Login;

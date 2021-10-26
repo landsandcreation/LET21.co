@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
 
-class AddNew extends Component {
-
-
-    render() {
+const AddNew = ({ setAuth }) => {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
         let imagealt = 'image'
         let data = sectiondata.aboutus
 
 
-    return <div className="add-new-property-area pd-top-90 mg-bottom-100">
+    return
+    (
+
+     <div className="add-new-property-area pd-top-90 mg-bottom-100">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-9 col-lg-10">
@@ -289,7 +289,7 @@ class AddNew extends Component {
           </div>
         </div>
 
-        }
+    );
 }
 
-export default AddNew
+export default AddNew;

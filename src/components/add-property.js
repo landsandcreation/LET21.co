@@ -4,7 +4,7 @@ import PageHeader from './global-components/page-header';
 import AddNew from './section-components/add-new';
 import Footer from './global-components/footer';
 
-const AddProperty = () => {
+const AddProperty = ({ setAuth }) => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Add Property" />

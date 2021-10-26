@@ -36,7 +36,7 @@ class Navbar extends Component {
                           <ul className="sub-menu">
                          
                             <li><Link to="/login">Login as travellers</Link></li>
-                            <li><Link to="/registration">Login as owner</Link></li>
+                            <li><Link to="/registration">Sign up</Link></li>
                           </ul>
                         </li>
                      
@@ -48,10 +48,7 @@ class Navbar extends Component {
                       </ul>
                     </div>
                   
-                    <div className="nav-right-part nav-right-part-desktop readeal-top">
-                      <Link className="btn btn-yellow" to="/add-property">OWNERS DASHBOARD<span className="right"><i className="la la-plus" /></span></Link>
-                      
-                    </div>
+                 
                   </div>
                 </nav>
               </div>

@@ -1,16 +1,17 @@
 import React from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
-import RegistrationSection from './section-components/registration';
+import ForgotPasswordSection from './section-components/forgot';
 import Footer from './global-components/footer';
 
-const Registration = ({ setauth }) => {
+const ForgotPassword = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Registration" />
-        <RegistrationSection />
+        <PageHeader headertitle="Forgot password" />
+        <ForgotPasswordSection />
         <Footer />
     </div>
 }
 
-export default Registration
+export default ForgotPassword
+

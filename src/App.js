@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React,{ Component, Fragment, useState } from 'react';
+import PlacesAutocomplete from 'react-places-autocomplete';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import blogdata from './data/blogdata.json';
 import Singleblogdata from './data/single-blogdata.json';
 import HomeV1 from './components/home-v1';
@@ -10,13 +11,15 @@ import HomeV4 from './components/home-v4';
 import Property from './components/property';
 import AvilableProperty from './components/availavbe-property';
 import PropertiesByCity from './components/properties-by-city';
-import RecentProperties from './components/recent-properties';
 import PropertyDetails from './components/property-details';
 import About from './components/about';
 import Advisor from './components/advisor';
 import Pricing from './components/pricing';
 import UserList from './components/user-list';
-import Registraion from './components/registration';
+import Registration from './components/registration';
+import Reset from './components/reset';
+import Verify from './components/verify';
+import ForgotPassword from './components/forgot';
 import Error from './components/error';
 import Faq from './components/faq';
 import News from './components/news';
@@ -26,11 +29,24 @@ import SearchMap from './components/search-map';
 import SearchGrid from './components/search-grid';
 import SearchList from './components/search-list';
 import AddNew from './components/add-property';
+import BookingDetails from './components/section-components/booking-details';
+import Login from './components/login';
+import CompletingBookingContent from './components/section-components/completing-booking-content';
+import { toast } from "react-toastify"
 
-function App() {
+toast.configure();
+
+const App  = (props) => {
+
+ 
+const [isAuthenticated, setAuth] = useState(false);
+          
+const setauth = boolean => {
+setAuth(boolean)
+    }
 
         return(
-            <div className="App">
+          <Fragment>
             <Router>
                 <HashRouter basename="/">
                 <div>
@@ -42,13 +58,18 @@ function App() {
                     <Route path="/property" component={Property} />
                     <Route path="/availavbe-property" component={AvilableProperty} />
                     <Route path="/properties-by-city" component={PropertiesByCity} />
-                    <Route path="/recent-properties" component={RecentProperties} />
                     <Route path="/property-details" component={PropertyDetails} />
                     <Route path="/about" component={About} />
                     <Route path="/advisor" component={Advisor} />
                     <Route path="/pricing" component={Pricing} />
                     <Route path="/user-list" component={UserList} />
-                    <Route path="/registration" component={Registraion} />
+                    <Route path="/registration" render={props => !isAuthenticated ? (<Registration {...props} setAuth={setauth} />) : (<Redirect to="/registration" />)} />
+                    <Route exact path="/login" render={props => !isAuthenticated ? (<Login {...props} setAuth={setauth} />) : (<Redirect to="/add-property"/>)} />
+                    <Route path="/reset" component={Reset} />
+                    <Route path="/verify" component={Verify} />
+                    <Route path="/forgot" component={ForgotPassword} />
+                    <Route path="/booking-details" component={BookingDetails} />
+                    <Route path="/completing-booking-content" component={CompletingBookingContent} />
                     <Route path="/error" component={Error} />
                     <Route path="/faq" component={Faq} />
                     <Route path="/news" component={News} />
@@ -57,16 +78,14 @@ function App() {
                     <Route path="/search-map" component={SearchMap} />
                     <Route path="/search-grid" component={SearchGrid} />
                     <Route path="/search-list" component={SearchList} />
-                    <Route path="/add-property" component={AddNew} />
+                    <Route path="/add-property"  render={props => isAuthenticated ? (<AddNew {...props}  setAuth={setauth} />) : (<Redirect to="/login" />)} />
                 </Switch>
                 </div>
                 </HashRouter>
             </Router>
-            </div>
-        )
-    }
-
+            </Fragment>
+        );
+}
 
 export default App;
-
 
