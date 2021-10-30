@@ -30,26 +30,21 @@ import SearchGrid from './components/search-grid';
 import SearchList from './components/search-list';
 import AddNew from './components/add-property';
 import BookingDetails from './components/section-components/booking-details';
-import Login from './components/login';
+ import Login from './components/login';
+//import Login from './components/section-components/login'
+import OwnersLogin from './components/owners_login';
 import DatePicker from './common/date-picker';
 import CompletingBookingContent from './components/section-components/completing-booking-content';
 import { toast } from "react-toastify"
 
-toast.configure();
 
-const App  = (props) => {
 
- 
-const [isAuthenticated, setAuth] = useState(false);
-          
-const setauth = boolean => {
-setAuth(boolean)
-    }
+function App (){
 
         return(
           <Fragment>
             <Router>
-                <HashRouter basename="/">
+             
                 <div>
                 <Switch>
                     <Route exact path="/" component={HomeV1} />
@@ -62,11 +57,10 @@ setAuth(boolean)
                     <Route path="/properties-by-city" component={PropertiesByCity} />
                     <Route path="/property-details" component={PropertyDetails} />
                     <Route path="/about" component={About} />
+                    <Route path="/login" component={Login} />
                     <Route path="/advisor" component={Advisor} />
                     <Route path="/pricing" component={Pricing} />
                     <Route path="/user-list" component={UserList} />
-                    <Route path="/registration" render={props => !isAuthenticated ? (<Registration {...props} setAuth={setauth} />) : (<Redirect to="/registration" />)} />
-                    <Route exact path="/login" render={props => !isAuthenticated ? (<Login {...props} setAuth={setauth} />) : (<Redirect to="/add-property"/>)} />
                     <Route path="/reset" component={Reset} />
                     <Route path="/verify" component={Verify} />
                     <Route path="/forgot" component={ForgotPassword} />
@@ -80,10 +74,10 @@ setAuth(boolean)
                     <Route path="/search-map" component={SearchMap} />
                     <Route path="/search-grid" component={SearchGrid} />
                     <Route path="/search-list" component={SearchList} />
-                    <Route path="/add-property"  render={props => isAuthenticated ? (<AddNew {...props}  setAuth={setauth} />) : (<Redirect to="/login" />)} />
                 </Switch>
+               
                 </div>
-                </HashRouter>
+           
             </Router>
             </Fragment>
         );

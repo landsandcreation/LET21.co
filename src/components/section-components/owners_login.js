@@ -1,43 +1,45 @@
-
-import React, { Component, Fragment, useState } from 'react';
+import React,{ Component, Fragment, useState } from 'react';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
-import axios from 'axios';
 import {Link} from "react-router-dom"
 import {useHistory} from "react-router-dom"
+import { toast } from "react-toastify"
 
-const Registration = ({ setauth }) => {
+const OwnersLogin = ({ setauth }) => {
 
 const [inputs, setInputs] = useState({
-  fName: "",
-  lName: "",
-  phone: "",
   email: "",
-  password: ""
-  
+  password: "" 
 })
-const { fName, lName, phone, email, password } = inputs;
+const { email, password } = inputs;
 
-const onChange = e => {
+const onChange = (e) => {
   setInputs({...inputs, [e.target.name]: e.target.value });
-}
+};
 
 const onSubmitForm = async (e) => {
   e.preventDefault()
 
   try {
 
-    const body = { fName, lName, phone, email, password };
-    const response = await fetch("https://Let21backend.herokuapp.com/owners/sign-up", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
+    const body = {email, password};
+    const response = await fetch("https://Let21backend.herokuapp.com/owner/sign-in", {
+      method: 'POST',
+      body: JSON.stringify(body),
+      headers: { "Content-Type": "application/json" }
     });
 
     const parseRes = await response.json();
+
+    if(parseRes.token){
+      localStorage.setItem("token", parseRes.token);
+      setauth(true);
+toast.success("login successfully!")      
+    }else{
+      setauth(false)
+      toast.error(parseRes)
+    }
     
-localStorage.setItem("token", parseRes.token);
-setauth(true)
 
 
 
@@ -55,27 +57,20 @@ return(
               </div>
               <div className="col-xl-4 col-lg-5 col-md-6">
                 <form className="contact-form-wrap contact-form-bg" onSubmit={onSubmitForm}>
-                  <h4>Registration</h4>
-                  <div className="rld-single-input">
-                    <input type="text" name="fName" value={fName} onChange= {e => onChange(e)} placeholder="First Name" />
-                  </div>
-                  <div className="rld-single-input">
-                    <input type="text"  name="lName" value={lName} onChange= {e => onChange(e)} placeholder="Last Name" />
-                  </div>
-                  <div className="rld-single-input">
-                    <input type="phone" name="phone" value={phone} onChange= {e => onChange(e)} placeholder="Phone number" />
-                  </div>
+                  <h4>Login Page</h4>
+                  
                   <div className="rld-single-input">
                     <input type="email" name="email" value={email} onChange= {e => onChange(e)}  placeholder="Email Address" />
                   </div>
                   <div className="rld-single-input">
                     <input type="password" name="password" value={password} onChange= {e => onChange(e)} placeholder="Password" />
                   </div>
-                  
+                 
                   <div className="btn-wrap">
-                   <button className="btn btn-yellow" type="submit">Register</button>
+                   <button className="btn btn-yellow" type="submit" >Login</button>
                   </div><br></br>
-                  <h6>Already have an account?<Link to="/login">Login</Link></h6>
+                  <h6>Do not have an account?<a href="">Register</a></h6>
+                  <h6>Forgot password?<Link to="/forgot">Remember me</Link></h6>
                   <ul className="social-icon">
                     <li className="ml-0">
                       <a href="#" target="_blank"><i className="fa fa-facebook  " /></a>
@@ -94,6 +89,6 @@ return(
         </div>
         </Fragment>
     );
-};
+}
     
-export default Registration;
+export default OwnersLogin;

@@ -1,17 +1,17 @@
 import React from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
-import LoginSection from './section-components/login';
+import OwnersLoginSection from './section-components/owners_login';
 import Footer from './global-components/footer';
 
-const Login = () => {
+const OwnersLogin = ({ setauth }) => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Login" />
-        <LoginSection />
+        <PageHeader headertitle="Owners Login" />
+        <OwnersLoginSection />
         <Footer />
     </div>
 }
 
-export default Login
+export default OwnersLogin
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './global-components/navbar';
 import Banner from './section-components/banner';
-
 import Explore from './section-components/explore';
 import FeaturedProperties from './section-components/featured-properties';
 import Ads from './section-components/ads';
