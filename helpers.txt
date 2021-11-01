@@ -1,0 +1,36 @@
+ const responseOk = (response) => {
+            var profile = response.getBasicProfile();
+            console.log(profile);
+            sessionStorage.setItem('profile', profile);
+            this.props.history.push('/');
+    }
+
+
+    //===========================================================================
+
+
+
+    if (auth2.isSignedIn.get()) {
+  var profile = auth2.currentUser.get().getBasicProfile();
+  console.log('ID: ' + profile.getId());
+  console.log('Full Name: ' + profile.getName());
+  console.log('Given Name: ' + profile.getGivenName());
+  console.log('Family Name: ' + profile.getFamilyName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+}
+
+
+//=---==========================================================================
+
+ const data = JSON.parse(sessionStorage.getItem('userData'));
+12
+        let data1=data;
+13
+        console.log(data1.data.Name);
+14
+    
+15
+         console.log(data1.Name);
+16
+         this.setState({name: data1.data.Name})
