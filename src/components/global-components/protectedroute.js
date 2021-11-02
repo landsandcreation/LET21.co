@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function protectedRoute({ component: Component, ...restOfProps }) {
-  const isauthenticated = sessionStorage.getItem("user");
+  const isauthenticated = localStorage.getItem("user");
 
   if(!isauthenticated){
     toast.info("Please Log in")

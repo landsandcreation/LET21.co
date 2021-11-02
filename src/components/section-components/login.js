@@ -1,15 +1,13 @@
 import React from "react";
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 export const Login = () => {
-  const clientId = "378146364389-3vtjgr85vva2bbo41h3i9ds83j09okhp.apps.googleusercontent.com";
+  const clientId =
+    "378146364389-3vtjgr85vva2bbo41h3i9ds83j09okhp.apps.googleusercontent.com";
 
   const onSuccess = (res) => {
-    console.log("[Login success] currentUser:", res.profileObj);
-   
+    const user = res.profileObj;
 
-    const user = res.profileObj
-
-    sessionStorage.setItem('user', JSON.stringify(user))
+    localStorage.setItem("user", JSON.stringify(user));
   };
 
   const onFailure = (res) => {
@@ -26,14 +24,12 @@ export const Login = () => {
         cookiePolicy={"single_host_origin"}
         style={{ marginTop: "100px" }}
         isSignedIn={true}
-        uxMode='redirect'
+        uxMode="redirect"
         redirectUri="http://localhost:3000/"
       />
 
-    <br/>
+      <br />
     </div>
   );
 };
 export default Login;
-
-      
