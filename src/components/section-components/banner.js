@@ -3,8 +3,22 @@ import { Link } from 'react-router-dom';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
 import  DatePicker  from "../../common/date-picker";
+import PlacesAutocomplete from 'react-places-autocomplete';
+import {
+  geocodeByAddress,
+  geocodeByPlaceId,
+  getLatLng,
+} from 'react-places-autocomplete';
 class Banner extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = { address: '' };
+  }
+ 
+  handleChange = address => {
+    this.setState({ address });
+  };
     componentDidMount() {
 
     const $ = window.$;
@@ -41,15 +55,46 @@ class Banner extends Component {
                       <div className="tab-pane fade show active" id="tabs_1">
                         <div className="rld-main-search">
                           <div className="row">
-                            <div className="col-xl-4 col-lg-6 col-md-6">
-                              <div className="rld-single-input left-icon">
-                               <div className="rld-single-select">
-                                <select className="select single-select">
-                                  <option value={1} disable="true">Where are you going</option>
-                                </select>
-                              </div>
-                                
-                              </div>
+                            
+                            <div>
+                            <PlacesAutocomplete
+        value={this.state.address}
+        onChange={this.handleChange}
+        onSelect={this.handleSelect}
+      >
+        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+          <div>
+            <input
+              {...getInputProps({
+                placeholder: 'Search Places ...',
+                className: 'location-search-input',
+              })}
+            />
+            <div className="autocomplete-dropdown-container">
+              {loading && <div>Loading...</div>}
+              {suggestions.map(suggestion => {
+                const className = suggestion.active
+                  ? 'suggestion-item--active'
+                  : 'suggestion-item';
+                // inline style for demonstration purpose
+                const style = suggestion.active
+                  ? { backgroundColor: '#fafafa', cursor: 'pointer' }
+                  : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                return (
+                  <div
+                    {...getSuggestionItemProps(suggestion, {
+                      className,
+                      style,
+                    })}
+                  >
+                    <span>{suggestion.description}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </PlacesAutocomplete>
                             </div>
                             <div className="col-xl-2 col-lg-6 col-md-6">
                               

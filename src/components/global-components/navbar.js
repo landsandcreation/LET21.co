@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import style from "./style.module.scss"
 
 class Navbar extends Component {
-
     render() {
         let publicUrl = process.env.PUBLIC_URL+'/'
         let imgattr = 'logo'
@@ -40,7 +39,7 @@ class Navbar extends Component {
                           </ul>
                         </li>
                      
-                      <li><Link to="/registration">List your property</Link></li>
+                      <li><Link to="/add-property">List your property</Link></li>
 
                   
                       

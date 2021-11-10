@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import sectiondata from '../../data/sections.json';
 import parse from 'html-react-parser';
 
-const AddNew = ({ setAuth }) => {
-
+class AddNew extends Component {
+  render() {
         let publicUrl = process.env.PUBLIC_URL+'/'
         let imagealt = 'image'
         let data = sectiondata.aboutus
 
 
     return
-    (
-
+    
      <div className="add-new-property-area pd-top-90 mg-bottom-100">
           <div className="container">
             <div className="row justify-content-center">
@@ -69,7 +68,7 @@ const AddNew = ({ setAuth }) => {
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
                          <span>Property address(Street and number)</span>
-                         <input type=""></input>
+                         <input type="" placeholder="Enter your address"></input>
                         </div>
                       </div>
                       <div className="col-lg-6 mb-3">
@@ -96,9 +95,8 @@ const AddNew = ({ setAuth }) => {
                         <div className="rld-single-select">
                           <select className="select single-select">
                             <option value={1}>Country</option>
-                            <option value={2}>Bedrooms 1</option>
-                            <option value={3}>Bedrooms 2</option>
-                            <option value={3}>Bedrooms 3</option>
+                            <option value={2}>Nigeria</option>
+                          
                           </select>
                         </div>
                       </div>
@@ -106,40 +104,34 @@ const AddNew = ({ setAuth }) => {
                         <div className="rld-single-select">
                           <select className="select single-select">
                             <option value={1}>State</option>
-                            <option value={2}>Bedrooms 1</option>
-                            <option value={3}>Bedrooms 2</option>
-                            <option value={3}>Bedrooms 3</option>
+                            <option value={2}>Lagos</option>
+                            <option value={3}>Oyo</option>
+                            <option value={3}>Abuja</option>
+                            <option value={3}>Rivers</option>
+                            <option value={3}>Ogun</option>
                           </select>
                         </div>
                       </div>
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
-                          <select className="select single-select">
-                            <option value={1}>Zip code</option>
-                            <option value={2}>Bedrooms 1</option>
-                            <option value={3}>Bedrooms 2</option>
-                            <option value={3}>Bedrooms 3</option>
-                          </select>
+                         <span>Zip Code</span>
+                         <input type="number"></input>
                         </div>
                       </div>
                  
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
-                          <select className="select single-select">
-                            <option value={1}>Interior Size</option>
-                            <option value={2}>Interior Size 1</option>
-                            <option value={3}>Interior Size 2</option>
-                            <option value={3}>Interior Size 3</option>
-                          </select>
+                      <span>Interior size</span>
+                      <input type="number" placeholder="in inches"></input>
                         </div>
                       </div>
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
                           <select className="select single-select">
-                            <option value={1}>Parking</option>
-                            <option value={2}>Parking 1</option>
-                            <option value={3}>Parking 2</option>
-                            <option value={3}>Parking 3</option>
+                            <option value={1}>Parking space</option>
+                            <option value={2}>1</option>
+                            <option value={3}>2</option>
+                            <option value={3}>3</option>
                           </select>
                         </div>
                       </div>
@@ -289,7 +281,8 @@ const AddNew = ({ setAuth }) => {
           </div>
         </div>
 
-    );
+    
+                      }
 }
 
 export default AddNew;

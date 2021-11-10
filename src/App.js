@@ -36,16 +36,22 @@ import OwnersLogin from './components/owners_login';
 import DatePicker from './common/date-picker';
 import CompletingBookingContent from './components/section-components/completing-booking-content';
 import { toast } from "react-toastify"
+import {
+    geocodeByAddress,
+    geocodeByPlaceId,
+    getLatLng,
+  } from 'react-places-autocomplete';
 
 
 
 function App (){
-
+  
         return(
           <Fragment>
             <Router>
              
                 <div>
+               
                 <Switch>
                     <Route exact path="/" component={HomeV1} />
                     <Route path="/home-v2" component={HomeV2} />
@@ -74,6 +80,7 @@ function App (){
                     <Route path="/search-map" component={SearchMap} />
                     <Route path="/search-grid" component={SearchGrid} />
                     <Route path="/search-list" component={SearchList} />
+                    <Route path="/add-property" component={AddNew} />
                 </Switch>
                
                 </div>
