@@ -73,8 +73,14 @@ class AddNew extends Component {
                       </div>
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
+                         <span>Property type</span>
+                         <input type="" placeholder="Enter your address"></input>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 mb-3">
+                        <div className="rld-single-select">
                           <select className="select single-select">
-                            <option value={1}>Bedrooms</option>
+                            <option value={1}>No of Bedrooms</option>
                             <option value={2}>Bedrooms 1</option>
                             <option value={3}>Bedrooms 2</option>
                             <option value={3}>Bedrooms 3</option>
@@ -84,41 +90,14 @@ class AddNew extends Component {
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
                           <select className="select single-select">
-                            <option value={1}>Bathroom</option>
+                            <option value={1}>No of Bathroom</option>
                             <option value={2}>Bedrooms 1</option>
                             <option value={3}>Bedrooms 2</option>
                             <option value={3}>Bedrooms 3</option>
                           </select>
                         </div>
                       </div>
-                      <div className="col-lg-6 mb-3">
-                        <div className="rld-single-select">
-                          <select className="select single-select">
-                            <option value={1}>Country</option>
-                            <option value={2}>Nigeria</option>
-                          
-                          </select>
-                        </div>
-                      </div>
-                      <div className="col-lg-6 mb-3">
-                        <div className="rld-single-select">
-                          <select className="select single-select">
-                            <option value={1}>State</option>
-                            <option value={2}>Lagos</option>
-                            <option value={3}>Oyo</option>
-                            <option value={3}>Abuja</option>
-                            <option value={3}>Rivers</option>
-                            <option value={3}>Ogun</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="col-lg-6 mb-3">
-                        <div className="rld-single-select">
-                         <span>Zip Code</span>
-                         <input type="number"></input>
-                        </div>
-                      </div>
-                 
+
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
                       <span>Interior size</span>
@@ -138,6 +117,7 @@ class AddNew extends Component {
                     </div>
                   </div>
                 </div>
+             
               
                 <div className="row pd-top-80">
                   <div className="col-md-4">
@@ -183,7 +163,7 @@ class AddNew extends Component {
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
                           <select className="select single-select">
-                            <option value={1}>Suitable for children(2-12 years)</option>
+                            <option value={1}>Suitable for Kids</option>
                             <option value={2}>Yes</option>
                             <option value={3}>No</option>
                      
@@ -191,16 +171,6 @@ class AddNew extends Component {
                         </div>
                       </div>
                 
-                      <div className="col-lg-6 mb-3">
-                        <div className="rld-single-select">
-                          <select className="select single-select">
-                            <option value={1}>Suitable for infants under 2 years</option>
-                            <option value={2}>Yes</option>
-                            <option value={3}>No</option>
-                     
-                          </select>
-                        </div>
-                      </div>
                       <div className="col-lg-6 mb-3">
                         <div className="rld-single-select">
                           <select className="select single-select">
@@ -235,7 +205,50 @@ class AddNew extends Component {
                   
                   </div>
                 </div>
-          
+                <div className="row pd-top-100">
+                  <div className="col-md-4">
+                    <div className="section-title">
+                      <h4><img src={publicUrl+"assets/img/icons/28.png" }alt="img" />Bank Details</h4>
+                    </div>
+                  </div>
+                  <div className="col-md-8">
+                  
+                    <div className="row">
+                    <div className="col-lg-6 mb-3">
+                        <div className="rld-single-select">
+                         <span>First Name(must be the name of the bank account)</span>
+                         <input type="" placeholder="Enter your first name"></input>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 mb-3">
+                        <div className="rld-single-select">
+                         <span>Last Name(must be the name of the bank account)</span>
+                         <input type="" placeholder="Enter your last name"></input>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 mb-3">
+                        <div className="rld-single-select">
+                         <span>Account Number</span>
+                         <input type="" placeholder="Enter your account no"></input>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 mb-3">
+                        <div className="rld-single-select">
+                         <span>Account Name</span>
+                         <input type="" placeholder="Enter your account name"></input>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-6 mb-3">
+                        <div className="rld-single-select">
+                      <span>Bank Name</span>
+                      <input type="text" placeholder="Enter your bank name"></input>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                </div>
                 <div className="row pd-top-80">
                   <div className="col-md-4">
                     <div className="section-title">
@@ -246,28 +259,28 @@ class AddNew extends Component {
                     <div className="row">
                       <div className="col-sm-4">
                         <ul className="rld-list-style mb-3 mb-sm-0">
-                          <li><i className="fa fa-check" /> Duvet</li>
-                          <li><i className="fa fa-check" /> Swimming Pool</li>
-                          <li><i className="fa fa-check" /> Gym</li>
-                          <li><i className="fa fa-check" /> Basketball</li>
-                          <li><i className="fa fa-check" /> Microwave</li>
+                          <li><i type="checkbox" /> Duvet</li>
+                          <li><i type="checkbox" /> Swimming Pool</li>
+                          <li><i type="checkbox" /> Gym</li>
+                          <li><i type="checkbox" /> Basketball</li>
+                          <li><i type="checkbox" /> Microwave</li>
                         </ul>
                       </div>
                       <div className="col-sm-4">
                         <ul className="rld-list-style mb-3 mb-sm-0">
-                          <li><i className="fa fa-check" /> Refrigerator</li>
-                          <li><i className="fa fa-check" /> Front Yard</li>
-                          <li><i className="fa fa-check" /> Oven</li>
-                          <li><i className="fa fa-check" /> Basketball</li>
-                          <li><i className="fa fa-check" /> Television set</li>
+                          <li><i type="checkbox" /> Refrigerator</li>
+                          <li><i type="checkbox" /> Front Yard</li>
+                          <li><i type="checkbox" /> Oven</li>
+                          <li><i type="checkbox" /> Basketball</li>
+                          <li><i type="checkbox" /> Television set</li>
                         </ul>
                       </div>
                       <div className="col-sm-4">
                         <ul className="rld-list-style mb-3 mb-sm-0">
-                          <li><i className="fa fa-check" /> Balcony</li>
-                          <li><i className="fa fa-check" /> Car park</li>
-                          <li><i className="fa fa-check" /> Deck</li>
-                          <li><i className="fa fa-check" /> Indoor Game</li>
+                          <li><i type="checkbox" /> Balcony</li>
+                          <li><i type="checkbox" /> Car park</li>
+                          <li><i type="checkbox" /> Deck</li>
+                          <li><i type="checkbox" /> Indoor Game</li>
                         </ul>
                       </div>
                       <div className="col-12 mt-5">
