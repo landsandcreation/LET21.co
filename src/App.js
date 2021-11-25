@@ -25,6 +25,7 @@ import Faq from './components/faq';
 import News from './components/news';
 import NewsDetails from './components/news-details';
 import Contact from './components/contact';
+import Dashboard from './components/dashboard';
 import SearchMap from './components/search-map';
 import SearchGrid from './components/search-grid';
 import SearchList from './components/search-list';
@@ -77,6 +78,7 @@ function App (){
                     <Route path="/news" component={News} />
                     <Route path="/news-details" component={NewsDetails} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/dashboard" component={Dashboard} />
                     <Route path="/search-map" component={SearchMap} />
                     <Route path="/search-grid" component={SearchGrid} />
                     <Route path="/search-list" component={SearchList} />

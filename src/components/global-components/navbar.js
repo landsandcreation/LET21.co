@@ -39,7 +39,7 @@ class Navbar extends Component {
                           </ul>
                         </li>
                      
-                      <li><Link to="/add-property">List your property</Link></li>
+                      <li><Link to="/dashboard">List your property</Link></li>
 
                   
                       
